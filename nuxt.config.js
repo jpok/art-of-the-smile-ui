@@ -24,7 +24,8 @@ export default {
   css: ['~/assets/main'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~/plugins/carousel-3d.js', mode: 'client' },
+            { src: '~/plugins/google-maps.js', mode: 'client' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -42,11 +43,18 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
+    treeShake: true,
+    defaultAssets: {
+      font: {
+        family: 'Ubuntu',
+      },
+    },
     customVariables: ['~/assets/variables.scss'],
     theme: {
+      options: { customProperties: true },
       dark: false,
       themes: {
-        light: {
+        light: {          
           primary: '#40C8E8',
           accent: '#E57E48',
           secondary: colors.grey.base,
@@ -63,7 +71,7 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
-        },
+        },        
       },
     },
   },

@@ -32,14 +32,14 @@
           ></div>
 
           <v-col cols="12" sm="2" class="order-first order-sm-last">
-            <v-img src="implants.png" />
+            <v-img class="implants" src="implants.png" />
           </v-col>
         </v-row>
       </v-tab-item>
       <v-tab> Invisalign </v-tab>
       <v-tab-item>
         <v-row justify="space-around" align="center" class="mt-12">
-          <v-col cols="12" sm="8">
+          <v-col cols="12">
             <div
               class="text-subtitle-1 text-sm-h6 primary--text font-weight-light"
             >
@@ -99,15 +99,25 @@
       </v-tab-item>
       <v-tab> Cleanings </v-tab>
       <v-tab-item>
-        <v-row justify="space-around" class="mt-12">
+        <v-row justify="space-around" align="center" class="mt-12">
           <v-col cols="12" sm="3">
             <div
-              class="text-subtitle-1 text-sm-h6 primary--text font-weight-light"
+              class="text-subtitle-1 text-sm-h4 primary--text font-weight-light"
             >
-              At Art of the Smile we believe in helping patients build a healthy
-              foundation for teeth and gums through a combination of great
-              home-care and regular cleanings and check-ups.
+              We believe in helping patients build a healthy
+              foundation for teeth and gums through a combination of great              
             </div>
+            <ul style="list-style: none; line-s" class="pa-0 accent--text text-h6">
+              <li class="my-4">
+                home-care
+              </li>
+              <li class="my-4">
+                regular cleanings
+              </li>
+              <li class="my-4">
+                 check-ups
+              </li>
+            </ul>
           </v-col>
           <div
             v-if="!$vuetify.breakpoint.xs"
@@ -116,13 +126,13 @@
           ></div>
           <v-col cols="12" sm="8">
             <div
-              class="text-subtitle-1 text-sm-h6 primary--text font-weight-light"
+              class="ma-2 text-subtitle-1 text-sm-h6 primary--text font-weight-light"
             >
               HOME CARE + CHECK-UPS + DENTAL TREATMENT = A HAPPY SMILE!
             </div>
 
             <div
-              class="text-body-1 md-text-h6 text-lg-h6 secondary--text font-weight-light"
+              class="ma-2 text-body-1 md-text-h6 text-lg-h6 secondary--text font-weight-light"
             >
               Remember, you’ve got to invest in your smile if you want to keep
               it healthy. We accept a variety of insurance plans and also offer
@@ -130,13 +140,13 @@
             </div>
 
             <div
-              class="text-subtitle-1 text-sm-h6 primary--text font-weight-light"
+              class="ma-2 text-subtitle-1 text-sm-h6 primary--text font-weight-light"
             >
               Fluoride for Adults
             </div>
 
             <div
-              class="text-body-1 md-text-h6 text-lg-h6 secondary--text font-weight-light"
+              class="ma-2 text-body-1 md-text-h6 text-lg-h6 secondary--text font-weight-light"
             >
               Consumption of fluoride-free bottled-water is just one reason
               cavities are on the rise for the first time since the 1970’s.
@@ -145,13 +155,13 @@
             </div>
 
             <div
-              class="text-subtitle-1 text-sm-h6 primary--text font-weight-light"
+              class="ma-2 text-subtitle-1 text-sm-h6 primary--text font-weight-light"
             >
               How does it work?
             </div>
 
             <div
-              class="text-body-1 md-text-h6 text-lg-h6 secondary--text font-weight-light"
+              class="ma-2 text-body-1 md-text-h6 text-lg-h6 secondary--text font-weight-light"
             >
               You wear each set of aligners for a week, removing them only to
               eat, drink, brush, and floss. As you replace each aligner with the
@@ -208,8 +218,8 @@
             class="line primary"
           ></div>
 
-          <v-col cols="12" sm="2" class="order-first order-sm-last">
-            <v-img src="implants.png" />
+          <v-col cols="12" sm="4" class="order-first order-sm-last">
+            <v-img src="whitening-1.svg" />
           </v-col>
         </v-row>
       </v-tab-item>
@@ -252,22 +262,24 @@
       <v-tab-item>
         <v-row justify="space-around" align="center" class="mt-12">
           <v-col cols="12" sm="6">
-            <div class="text-h6 secondary--text accent--text font-weight-light">
+            <v-row>
+            <v-col cols="12" class="text-h6 primary--text font-weight-light">
               If your teeth are pretty healthy, but they could use a little
               reshaping, enamel contouring is a safe and gentle solution. Enamel
               contouring provides subtle refinements to your natural teeth for a
               more youthful look.
-            </div>
-            <div class="text-subtitle-1 secondary--text font-weight-light">
-              Porcelain Veneers offer an amazing solution for all kinds of smile
-              imperfections. Veneers can repair chips, cracks, discoloration,
-              and close gaps with one of the most natural looking dental
-              procedures offered today. They offer a relatively noninvasive way
-              to enhance your smile’s appearance tremendously. Completed in just
-              2 visits, cosmetic veneers are often referred to as “instant
-              orthodontics” because they can provide the look of a perfectly
-              straightened smile without the long wait of braces.
-            </div>
+            </v-col>
+            <v-col cols="12" class="text-subtitle-1 secondary--text font-weight-light">
+              Dr. Tekin can perform enamel contouring with very little
+              preparation in a quick appointment. The tooth reshaping process is
+              easy on teeth, and there’s no anesthesia or downtime. This instant
+              treatment can fix a variety of problems, including cracks, chips,
+              rough surfaces, overlapping, and uneven alignment. Tooth
+              reshaping, or contouring, can even be used on multiple teeth to
+              create a smile that looks like it has been straightened with
+              braces!
+            </v-col>
+            </v-row>
           </v-col>
           <v-col cols="12" sm="4">
             <v-row>
@@ -320,31 +332,33 @@
               straightened smile without the long wait of braces.
             </div>
           </v-col>
-          <v-col cols="12" sm="3">
-            <v-row>
-              <v-col cols="6">
-                <span
-                  class="text-h4 accent--text font-italic font-weight-light mx-2"
+          <v-col cols="12" sm="5">
+            <v-row justify="center">
+              <v-col cols="3">
+                <v-row
+                  justify="center"
+                  class="text-h4 accent--text font-italic font-weight-light"
                 >
                   Before
-                </span>
+                </v-row>
               </v-col>
-              <v-col cols="6">
-                <span
-                  class="text-h4 primary--text font-italic font-weight-light mx-2"
+              <v-col cols="3">
+                <v-row
+                  justify="center"
+                  class="text-h4 primary--text font-italic font-weight-light"
                 >
                   After
-                </span>
+                </v-row>
               </v-col>
             </v-row>
-            <v-row>
-              <v-col cols="6">
-                <v-img class="mt-8" src="crowns-before-1.png" />
-                <v-img class="mt-8" src="crowns-before-2.png" />
+            <v-row justify="center">
+              <v-col cols="3">
+                <v-img class="mt-8 pa-8" src="crowns-before-1.png" />
+                <v-img class="mt-8 pa-8" src="crowns-before-2.png" />
               </v-col>
-              <v-col cols="6">
-                <v-img class="mt-8" src="crowns-after-1.png" />
-                <v-img class="mt-8" src="crowns-after-2.png" />
+              <v-col cols="3">
+                <v-img class="mt-8 pa-8" src="crowns-after-1.png" />
+                <v-img class="mt-8 pa-8" src="crowns-after-2.png" />
               </v-col>
             </v-row>
           </v-col>
@@ -386,14 +400,16 @@
           <v-col cols="12" sm="5">
             <v-row>
               <v-col cols="6">
-                <v-row justify="center"
+                <v-row
+                  justify="center"
                   class="text-h4 accent--text font-italic font-weight-light"
                 >
                   Before
                 </v-row>
               </v-col>
               <v-col cols="6">
-                <v-row justify="center"
+                <v-row
+                  justify="center"
                   class="text-h4 primary--text font-italic font-weight-light"
                 >
                   After
@@ -429,4 +445,21 @@ export default {
   margin: 1rem;
   height: 15rem;
 }
+
+.implants {
+  height: 180px;
+  width: 180px;
+  transform: rotateY(560deg);
+  animation: turn 3.5s ease-out forwards 1s;
+}
+
+@keyframes turn {
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+/* .v-slide-group__content {
+    transition: 3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
+} */
 </style>

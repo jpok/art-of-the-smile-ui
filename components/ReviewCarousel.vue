@@ -1,6 +1,13 @@
 <template>
   <v-container fluid>
-    <v-row :justify="'center'">
+    <v-row justify="center">
+      <div
+        class="text-h6 ma-4 text-center text-sm-h3 text-lg-h2 primary--text font-italic"
+      >
+        Our Testimonials
+      </div>
+    </v-row>
+    <v-row justify="center">
       <v-icon x-large> mdi-format-quote-open </v-icon>
     </v-row>
 
@@ -9,18 +16,22 @@
       <v-icon @click="model++"> </v-icon>
     </v-row>
 
-    <v-carousel
-      :height="$vuetify.breakpoint.xs ? '10rem' : '15rem'"
+    <v-carousel      
       hide-delimiters
+      height="24rem"      
       v-model="model"
     >
       <v-carousel-item v-for="review in reviews" :key="review.reviewer">
         <v-col align="center">
-          <div class="text-body-2 text-sm-body-1 font-weight-light secondary--text">
+          <div
+            class="text-body-2 text-sm-body-1 font-weight-light secondary--text"
+          >
             {{ review.comments }}
           </div>
           <br />
-          <div class="text-h6 accent--text text-sm-h3 font-weight-light primary--text">
+          <div
+            class="text-h6 accent--text text-sm-h3 font-weight-light primary--text"
+          >
             {{ review.reviewer }}
           </div>
         </v-col>

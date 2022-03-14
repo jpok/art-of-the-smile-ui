@@ -12,9 +12,23 @@
     </v-row>
     <v-row justify="center">
       <v-col cols="10">
-      <ProcedureTabs/>
-      </v-col> 
+        <ProcedureTabs />
+      </v-col>
     </v-row>
+
+    <p
+      style="
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+      "
+      class="primary--text text-overline"
+    >
+      The health and appearance of your smile should be perfectly in balance,
+      and our careful attention to detail reflects this principle
+    </p>
   </v-container>
 </template>
 
@@ -23,3 +37,10 @@ export default {
   name: 'ProceduresPage',
 }
 </script>
+
+<style scoped>
+.balance {
+  position: fixed;
+  bottom: 20;
+}
+</style>
