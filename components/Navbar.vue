@@ -5,6 +5,40 @@
       @click.stop="drawer = !drawer"
     ></v-app-bar-nav-icon>
 
+    <v-navigation-drawer 
+      v-model="drawer"
+      v-if="$vuetify.breakpoint.mobile"         
+      app>
+      <v-divider></v-divider>
+      <v-list>
+        <v-list-item-group          
+          active-class="gray"
+        >
+          <v-list-item>
+               <NuxtLink class="pa-6" to="/">Home</NuxtLink>
+          </v-list-item>
+
+          <v-list-item>
+             <NuxtLink class="pa-6" to="/procedures">Procedures</NuxtLink>
+          </v-list-item>
+
+          <v-list-item>
+             <NuxtLink class="pa-6" to="/technology">Technology</NuxtLink>
+          </v-list-item>
+
+          <v-list-item>
+            <NuxtLink class="pa-6" to="/our-office">Our Office</NuxtLink>
+          </v-list-item>
+
+          <v-list-item>
+            <NuxtLink class="pa-6" to="/location">Location</NuxtLink>
+          </v-list-item>
+
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+
+
     <v-app-bar-title>
       <v-img
         alt="Chimex Logo"

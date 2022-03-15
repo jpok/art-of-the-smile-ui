@@ -12,8 +12,7 @@
         <carousel-3d border="0">
           <slide :index="0"> <v-img src="art/art-2.jpg" /> </slide>
           <slide :index="1">
-            <v-img src="art/art-1.jpg" />
-            <div>hi</div>
+            <v-img src="art/art-1.jpg" />            
           </slide>
           <slide :index="2">
             <v-img src="art/art-3.jpg" />
@@ -31,6 +30,9 @@
             <v-img src="art/art-7.jpg" />
           </slide>
         </carousel-3d>
+        <v-row justify="end">
+          ART TITLE            
+        </v-row>
       </v-col>
       <v-row justify="center">
         <div
