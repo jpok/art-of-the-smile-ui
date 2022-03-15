@@ -11,11 +11,6 @@
       <v-icon x-large> mdi-format-quote-open </v-icon>
     </v-row>
 
-    <v-row v-if="model">
-      <v-icon @click="model--"> </v-icon>
-      <v-icon @click="model++"> </v-icon>
-    </v-row>
-
     <v-carousel      
       hide-delimiters
       height="24rem"      

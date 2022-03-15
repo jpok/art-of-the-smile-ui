@@ -2,11 +2,9 @@
   <v-app>
     <Navbar />
     <v-main>
-      <v-container fluid>
-        <Nuxt />
-      </v-container>
+      <Nuxt />
     </v-main>
-    
+
     <v-footer :absolute="!fixed" color="primary" class="white--text" app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
@@ -43,13 +41,24 @@ export default {
 </script>
 
 <style>
-  a {
-    text-decoration: none;    
-    color:  grey !important;
-  }
-  a.nuxt-link-exact-active {
+.v-btn {
+  border-radius: 28px !important;
+}
+
+.v-dialog {
+  overflow: hidden;
+}
+
+.v-application {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: grey !important;
+}
+a.nuxt-link-exact-active {
   font-weight: bold;
-  color:  var(--v-primary-base) !important;
+  color: var(--v-primary-base) !important;
 }
 /* exact link will show the primary color for only the exact matching link */
 

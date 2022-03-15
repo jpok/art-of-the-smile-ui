@@ -24,8 +24,8 @@ export default {
 <style>
 
 .icon {
-  transform: rotateY(560deg);
-  animation: turn 10.5s ease-in-out forwards 0s;
+  transform: rotateY(360deg);
+  animation: turn 5.5s ease-in-out forwards 0s;
 }
 
 @keyframes turn {

@@ -1,29 +1,19 @@
 <template>
-  <v-app-bar app elevation="4" color="white" class="app-bar">
-    <v-app-bar-nav-icon
-      v-if="$vuetify.breakpoint.mobile"
-      @click.stop="drawer = !drawer"
-    ></v-app-bar-nav-icon>
-
-    <v-navigation-drawer 
-      v-model="drawer"
-      v-if="$vuetify.breakpoint.mobile"         
-      app>
+  <v-container fluid>
+    <v-navigation-drawer v-model="drawer" v-if="$vuetify.breakpoint.xs" app>
       <v-divider></v-divider>
       <v-list>
-        <v-list-item-group          
-          active-class="gray"
-        >
+        <v-list-item-group active-class="gray">
           <v-list-item>
-               <NuxtLink class="pa-6" to="/">Home</NuxtLink>
+            <NuxtLink class="pa-6" to="/">Home</NuxtLink>
           </v-list-item>
 
           <v-list-item>
-             <NuxtLink class="pa-6" to="/procedures">Procedures</NuxtLink>
+            <NuxtLink class="pa-6" to="/procedures">Procedures</NuxtLink>
           </v-list-item>
 
           <v-list-item>
-             <NuxtLink class="pa-6" to="/technology">Technology</NuxtLink>
+            <NuxtLink class="pa-6" to="/technology">Technology</NuxtLink>
           </v-list-item>
 
           <v-list-item>
@@ -33,56 +23,54 @@
           <v-list-item>
             <NuxtLink class="pa-6" to="/location">Location</NuxtLink>
           </v-list-item>
-
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
 
-
-    <v-app-bar-title>
+    <v-app-bar app elevation="4" color="white" class="app-bar">
+      <v-app-bar-nav-icon
+        v-if="$vuetify.breakpoint.xs"
+        @click.stop="drawer = !drawer"
+      ></v-app-bar-nav-icon>      
       <v-img
-        alt="Chimex Logo"
-        contain
-        src=""
-        transition="scale-transition"
-        :max-width="$vuetify.breakpoint.mobile ? '100' : '150'"
-    /></v-app-bar-title>
+          alt="Art of The Smile Logo"
+          src="logo.png"
+          transition="scale-transition"
+          :max-width="$vuetify.breakpoint.xs ? '100' : '130'"
+        />
 
-    <v-spacer></v-spacer>
-    <v-row v-if="!$vuetify.breakpoint.mobile" justify="center">
-      <NuxtLink class="pa-6" to="/">Home</NuxtLink>
-      <NuxtLink class="pa-6" to="/procedures">Procedures</NuxtLink>
-      <NuxtLink class="pa-6" to="/technology">Technology</NuxtLink>
-      <NuxtLink class="pa-6" to="/our-office">Our Office</NuxtLink>
-      <NuxtLink class="pa-6" to="/location">Location</NuxtLink>
-    </v-row>
-    <v-spacer></v-spacer>
+      <v-spacer></v-spacer>
+      <v-row v-if="!$vuetify.breakpoint.xs" justify="center">
+        <NuxtLink class="pa-6" to="/">Home</NuxtLink>
+        <NuxtLink class="pa-6" to="/procedures">Procedures</NuxtLink>
+        <NuxtLink class="pa-6" to="/technology">Technology</NuxtLink>
+        <NuxtLink class="pa-6" to="/our-office">Our Office</NuxtLink>
+        <NuxtLink class="pa-6" to="/location">Location</NuxtLink>
+      </v-row>
+      <v-spacer></v-spacer>
 
-    <v-dialog
-      v-model="dialog"
-      v-bind:class="[$vuetify.breakpoint.mobile ? 'abs-dialog' : '']"
-      :hide-overlay="$vuetify.breakpoint.mobile"
-      :fullscreen="$vuetify.breakpoint.mobile"
-      transition="dialog-top-transition"
-      :max-width="
-        $vuetify.breakpoint.mobile ? $vuetify.breakpoint.mobile.width : '600px'
-      "
-    >
-      <template v-slot:activator="{ attrs }">
-        <v-btn
-          class="pa-2"
-          color="primary"
-          elevation="2"
-          v-bind="attrs"
-          @click="dialog = true"
-        >
-          Request a Quote
-        </v-btn>
-      </template>
+      <v-dialog
+        v-model="dialog"
+        :fullscreen="$vuetify.breakpoint.xs"
+        transition="dialog-top-transition"
+        :width="$vuetify.breakpoint.xs ? $vuetify.breakpoint.xs.width : '80%'"
+      >
+        <template v-slot:activator="{ attrs }">
+          <v-btn
+            class="pa-2"
+            color="primary"
+            elevation="2"
+            v-bind="attrs"
+            @click="dialog = true"
+          >
+            Book Online
+          </v-btn>
+        </template>
 
-      <quote-form @close-dialog="closeDialog()"></quote-form>
-    </v-dialog>
-  </v-app-bar>
+        <BookForm @close-dialog="closeDialog()" />
+      </v-dialog>
+    </v-app-bar>
+  </v-container>
 </template>
           
 
