@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <v-row align="center" dense>
+    <v-row align="center">
       <v-col cols="12" sm="8">
         <div
           class="text-h5 text-sm-h4 text-lg-h3 text-sm-h3 text-lg-h2 primary--text font-weight-light"
@@ -10,7 +10,7 @@
       </v-col>
     </v-row>
     <v-row align="start" justify="space-around">
-      <v-col cols="12" sm="6" class="mt-12">
+      <v-col cols="12" sm="6" class="mt-12 pl-6">
         <p
           style="line-height: 180%"
           class="text-body-1 md-text-h6 text-lg-h5 secondary--text font-weight-light"
