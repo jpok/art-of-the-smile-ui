@@ -185,7 +185,7 @@
 <script>
 import { mask } from 'vue-the-mask'
 import emailjs from '@emailjs/browser'
-import moment from 'moment'
+// import moment from 'moment'
 
 export default {
   directives: { mask },

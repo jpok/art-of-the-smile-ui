@@ -36,7 +36,7 @@
           alt="Art of The Smile Logo"
           src="logo.png"
           transition="scale-transition"
-          :max-width="$vuetify.breakpoint.xs ? '100' : '130'"
+          :max-width="$vuetify.breakpoint.xs ? '100' : '150'"
         />
 
       <v-spacer></v-spacer>

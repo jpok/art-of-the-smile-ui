@@ -12,10 +12,10 @@
           School of Dental Medicine in 1995.
         </div>
       </v-col>
-      <v-row v-if="$vuetify.breakpoint.xs" justify="end">
-        <v-col cols="6" sm="3">
-          <v-img src="/degrees.png" alt="degrees" />
-        </v-col>
+      <v-row v-if="$vuetify.breakpoint.xs" justify="center">
+        <!-- <v-col cols="6"> -->
+          <v-img max-width="250px" class="" src="/degrees.png" alt="degrees" />
+        <!-- </v-col> -->
       </v-row>
       <v-col cols="12" sm="6" class="pa-12">
         <v-img src="/brock.png" alt="dentist brock tekin" />
