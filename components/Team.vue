@@ -8,7 +8,7 @@
           Dr. Brock F. Tekin is a native of Atlanta. He graduated from the
           Lovett School in 1987 and maintains close ties with many of his
           classmates. He obtained a Bachelor of Science from Tulane University
-          in 1991. Dr, Tekin received his dental degree from Tufts University
+          in 1991. Dr. Tekin received his dental degree from Tufts University
           School of Dental Medicine in 1995.
         </div>
       </v-col>
