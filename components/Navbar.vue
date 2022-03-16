@@ -32,11 +32,11 @@
         v-if="$vuetify.breakpoint.xs"
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>      
-      <v-img
+      <v-img eager 
           alt="Art of The Smile Logo"
           src="logo.png"
           transition="scale-transition"
-          :max-width="$vuetify.breakpoint.xs ? '100' : '150'"
+          :max-width="$vuetify.breakpoint.xs ? '100' : '130'"
         />
 
       <v-spacer></v-spacer>

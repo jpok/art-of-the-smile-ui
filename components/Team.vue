@@ -14,16 +14,16 @@
       </v-col>
       <v-row v-if="$vuetify.breakpoint.xs" justify="center">
         <!-- <v-col cols="6"> -->
-          <v-img max-width="250px" class="" src="/degrees.png" alt="degrees" />
+          <v-img eager  max-width="250px" class="" src="/degrees.png" alt="degrees" />
         <!-- </v-col> -->
       </v-row>
       <v-col cols="12" sm="6" class="pa-12">
-        <v-img src="/brock.png" alt="dentist brock tekin" />
+        <v-img eager  src="/brock.png" alt="dentist brock tekin" />
       </v-col>
       <v-col cols="12" sm="3">
         <v-row>
           <v-col v-if="!$vuetify.breakpoint.xs" cols="6" sm="12">
-            <v-img src="/degrees.png" alt="degrees" />
+            <v-img eager  src="/degrees.png" alt="degrees" />
           </v-col>
 
           <v-col cols="12">
@@ -49,7 +49,7 @@
     <v-row justify="space-around">
       <v-col cols="12" md="4" v-for="member in team" :key="member.img">        
         <v-card flat>
-        <v-img :src="member.img"/>
+        <v-img eager  :src="member.img"/>
         <v-card-text class="secondary--text  text-center">
           {{ member.bio }}
         </v-card-text>

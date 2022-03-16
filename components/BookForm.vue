@@ -81,6 +81,7 @@
         <v-col>
           <v-menu
             ref="dateMenu"
+            nudge-left="120px"
             v-model="dateMenu"
             :close-on-content-click="false"
             :return-value.sync="date"
@@ -97,6 +98,7 @@
                 readonly
                 v-bind="attrs"
                 v-on="on"
+                :value="computedDateFormattedMomentjs"
               ></v-text-field>
             </template>
             <v-date-picker v-model="date" no-title scrollable>
@@ -185,7 +187,7 @@
 <script>
 import { mask } from 'vue-the-mask'
 import emailjs from '@emailjs/browser'
-// import moment from 'moment'
+import moment from 'moment'
 
 export default {
   directives: { mask },
@@ -205,12 +207,16 @@ export default {
       patientName: '',
       relationship: '',
       newPatient: 'no',
-      date: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
+     date: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
         .toISOString()
         .substr(0, 10),
     }
   },
-
+  computed: {
+      computedDateFormattedMomentjs () {
+        return this.date ? moment(this.date).format('dddd, MMMM Do YYYY') : ''
+      },      
+  },
   methods: {
     sendEmail(e) {
       emailjs.sendForm(
@@ -238,6 +244,7 @@ export default {
 </script>
 
 <style scoped>
+
 .pdf-link {
   color: var(--v-primary-base) !important;
   text-decoration: underline !important;

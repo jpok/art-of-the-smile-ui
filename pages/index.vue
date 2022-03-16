@@ -9,8 +9,8 @@
         </div>
       </v-col>
     </v-row>
-    <v-row align="center" justify="space-around">
-      <v-col cols="12" sm="4">
+    <v-row align="start" justify="space-around">
+      <v-col cols="12" sm="6" class="mt-12">
         <p
           style="line-height: 180%"
           class="text-body-1 md-text-h6 text-lg-h5 secondary--text font-weight-light"
@@ -23,17 +23,17 @@
         </p>
       </v-col>
       <v-col cols="12" sm="6" class="order-first order-sm-last">
-        <v-img src="/invisalign-woman.png" class="mb-8" alt="invisalign-woman" />
+        <v-img eager  src="/invisalign-woman.png" class="mb-8" alt="invisalign-woman" />
 
         <v-row justify="center" align="center">
           <v-col>
             <v-row justify="center" align="center">
               <div
-                class="text-body-1 md-text-h6 text-lg-h5 secondary--text font-weight-light"
+                class="text-body-1 font-italic md-text-h6 text-lg-h5 secondary--text font-weight-light"
               >
                 Award Winning INVISALIGN provider
               </div>
-              <v-img
+              <v-img eager 
                 max-width="6rem"
                 src="/invisalign-reward.png"
                 alt="invisalign-reward"
@@ -52,7 +52,7 @@
       </div>
     </v-row>
     <v-row justify="center">
-      <v-img src="/swoosh.png" alt="swoosh" />
+      <v-img eager  src="/swoosh.png" alt="swoosh" />
     </v-row>
 
     <Team />

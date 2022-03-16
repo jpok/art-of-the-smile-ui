@@ -1,7 +1,7 @@
 <template>
   <v-card flat>    
     <div style="display:block; height:70px" class="pl-4" >      
-      <v-img class="icon" max-width="50" :src="icon" />            
+      <v-img eager  class="icon" max-width="50" :src="icon" />            
     </div>
     <div class="primary--text pl-4">    
       {{ title }}    
