@@ -118,7 +118,7 @@
                 <v-img
                   eager
                   max-height="160"
-                  style="border-radius: 20px; border: 4px solid;"
+                  style="border-radius: 20px; border: 4px solid"
                   class="accent"
                   src="implants-before.jpg"
                 />
@@ -127,7 +127,7 @@
                 <v-img
                   eager
                   max-height="160"
-                  style="border-radius: 20px; border: 4px solid;"
+                  style="border-radius: 20px; border: 4px solid"
                   class="primary"
                   src="implants-after.jpg"
                 />
@@ -268,7 +268,7 @@
             <v-row>
               <v-img
                 eager
-                style="border-radius: 20px; border: 4px solid;"
+                style="border-radius: 20px; border: 4px solid"
                 class="secondary"
                 src="teeth-whitening.jpeg"
               />
@@ -279,27 +279,25 @@
       <v-tab> Veneers </v-tab>
       <v-tab-item>
         <v-row justify="center">
-          <v-col cols="6" md="4">
-            <v-row
-              justify="center"
+          <v-col cols="6"            
+              align="center"
               class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
             >
               Before
-            </v-row>
+            
           </v-col>
-          <v-col cols="6" md="4">
-            <v-row
+          <v-col cols="6"            
               justify="center"
+              align="center"
               class="text-h6 text-sm-h5 text-lg-h4 primary--text font-italic font-weight-light"
             >
-              After
-            </v-row>
+              After            
           </v-col>
         </v-row>
         <v-row justify="center">
           <!-- <v-carousel hide-delimiters v-model="model">
             <v-carousel-item> -->
-              <!-- <v-row>
+          <!-- <v-row>
                 <v-col cols="6">
                   <v-img
                     eager
@@ -319,29 +317,43 @@
                   />
                 </v-col>
               </v-row> -->
-            <!-- </v-carousel-item>
+          <!-- </v-carousel-item>
             <v-carousel-item> -->
-              <v-row>
-                <v-col cols="6">
-                  <v-img
+          <v-row>
+            <v-col cols="6" align="center">
+                 <v-img
                     eager
-                    max-height="150"
-                    style="border-radius: 20px; border: 4px solid;"
+                    max-width="300"
+                    style="border-radius: 20px; border: 4px solid; opacity: 0.9"
                     class="accent mt-6"
-                    src="veneer-before-2.jpg"
+                    src="new-veneer-before.jpg"
                   />
-                </v-col>
-                <v-col cols="6">
-                  <v-img
+              <v-img
+                eager
+                max-width="300"
+                style="border-radius: 20px; border: 4px solid"
+                class="accent mt-6"
+                src="veneer-before-2.jpg"
+              />
+            </v-col>
+            <v-col cols="6" align="center">
+               <v-img
                     eager
-                    max-height="150"
-                    style="border-radius: 20px; border: 4px solid;"
+                    max-width="300"
+                    style="border-radius: 20px; border: 4px solid; opacity: 0.9"
                     class="primary mt-6"
-                    src="veneer-after-2.jpg"
+                    src="new-veneer-after.jpg"
                   />
-                </v-col>
-              </v-row>
-            <!-- </v-carousel-item>
+              <v-img
+                eager
+                max-width="300"
+                style="border-radius: 20px; border: 4px solid"
+                class="primary mt-6"
+                src="veneer-after-2.jpg"
+              />
+            </v-col>
+          </v-row>
+          <!-- </v-carousel-item>
           </v-carousel> -->
         </v-row>
         <v-row justify="space-around" align="center">
@@ -397,7 +409,7 @@
             <v-row justify="center">
               <v-card class="pa-6">
                 <v-img
-                  style="border-radius: 20px; border: 4px solid;"
+                  style="border-radius: 20px; border: 4px solid"
                   class="secondary"
                   eager
                   src="bonding.png"
@@ -409,8 +421,29 @@
       </v-tab-item>
       <v-tab> Crowns </v-tab>
       <v-tab-item>
-        <v-row justify="space-around" class="">
-          <v-col cols="12" sm="4">
+        <v-row justify="space-around">
+          <v-col cols="6">
+            <v-row
+              justify="center"
+              class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
+            >
+              Before
+            </v-row>
+            <v-img eager max-width="40rem" class="mt-8 pa-8" src="crown-before.jpg" />
+          </v-col>
+          <v-col cols="6">
+            <v-row
+              justify="center"
+              class="text-h6 text-sm-h5 text-lg-h4 primary--text font-italic font-weight-light"
+            >
+              After
+            </v-row>
+            <v-img eager max-width="40rem" class="mt-8 pa-8" src="crown-after.jpg" />
+          </v-col>
+        </v-row>
+
+        <v-row justify="space-around">
+          <v-col cols="12" sm="6">
             <div class="text-h6 primary--text mb-4 font-weight-light">
               The most beautiful and realistic looking crown is an all-ceramic
               crown.
@@ -422,32 +455,7 @@
             </div>
           </v-col>
 
-          <v-col cols="12" sm="4" class="order-first order-sm-0">
-            <v-row justify="center">
-              <v-col cols="6">
-                <v-row
-                  justify="center"
-                  class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
-                >
-                  Before
-                </v-row>
-                <v-img eager class="mt-8 pa-8" src="crowns-before-1.png" />
-                <v-img eager class="mt-8 pa-8" src="crowns-before-2.png" />
-              </v-col>
-              <v-col cols="6">
-                <v-row
-                  justify="center"
-                  class="text-h6 text-sm-h5 text-lg-h4 primary--text font-italic font-weight-light"
-                >
-                  After
-                </v-row>
-                <v-img eager class="mt-8 pa-8" src="crowns-after-1.png" />
-                <v-img eager class="mt-8 pa-8" src="crowns-after-2.png" />
-              </v-col>
-            </v-row>
-          </v-col>
-
-          <v-col cols="12" sm="4">
+          <v-col cols="12" sm="6">
             <div class="text-h6 primary--text font-weight-light">
               Why we don’t use old-fashioned metal crowns
             </div>
