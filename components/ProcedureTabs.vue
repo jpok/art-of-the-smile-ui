@@ -118,7 +118,7 @@
                 <v-img
                   eager
                   max-height="160"
-                  style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                  style="border-radius: 20px; border: 4px solid;"
                   class="accent"
                   src="implants-before.jpg"
                 />
@@ -127,7 +127,7 @@
                 <v-img
                   eager
                   max-height="160"
-                  style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                  style="border-radius: 20px; border: 4px solid;"
                   class="primary"
                   src="implants-after.jpg"
                 />
@@ -268,7 +268,7 @@
             <v-row>
               <v-img
                 eager
-                style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                style="border-radius: 20px; border: 4px solid;"
                 class="secondary"
                 src="teeth-whitening.jpeg"
               />
@@ -326,7 +326,7 @@
                   <v-img
                     eager
                     max-height="150"
-                    style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                    style="border-radius: 20px; border: 4px solid;"
                     class="accent mt-6"
                     src="veneer-before-2.jpg"
                   />
@@ -335,7 +335,7 @@
                   <v-img
                     eager
                     max-height="150"
-                    style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                    style="border-radius: 20px; border: 4px solid;"
                     class="primary mt-6"
                     src="veneer-after-2.jpg"
                   />
@@ -397,7 +397,7 @@
             <v-row justify="center">
               <v-card class="pa-6">
                 <v-img
-                  style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                  style="border-radius: 20px; border: 4px solid;"
                   class="secondary"
                   eager
                   src="bonding.png"
