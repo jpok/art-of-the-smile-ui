@@ -71,7 +71,7 @@
       <v-tab> Implants </v-tab>
       <v-tab-item>
         <v-row justify="space-around" align="center">
-          <v-col cols="12" sm="6">
+          <v-col cols="12" sm="5">
             <div
               class="text-h6 text-sm-h5 text-lg-h4 primary--text font-weight-light"
             >
@@ -94,8 +94,45 @@
             class="line primary"
           ></div>
 
-          <v-col cols="12" sm="4" align="center" class="order-first order-sm-last">
-            <v-img eager  max-width="15rem" class="implants" src="implants.png" />
+          <v-col cols="12" sm="6" class="order-first order-sm-last">
+            <v-row>
+              <v-col cols="6">
+                <v-row
+                  justify="center"
+                  class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
+                >
+                  Before
+                </v-row>
+              </v-col>
+              <v-col cols="6">
+                <v-row
+                  justify="center"
+                  class="text-h6 text-sm-h5 text-lg-h4 4 primary--text font-italic font-weight-light"
+                >
+                  After
+                </v-row>
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-col cols="6">
+                <v-img
+                  eager
+                  max-height="160"
+                  style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                  class="accent"
+                  src="implants-before.jpg"
+                />
+              </v-col>
+              <v-col cols="6">
+                <v-img
+                  eager
+                  max-height="160"
+                  style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                  class="primary"
+                  src="implants-after.jpg"
+                />
+              </v-col>
+            </v-row>
           </v-col>
         </v-row>
       </v-tab-item>
@@ -111,7 +148,7 @@
             </v-col>
             <v-col class="ml-auto">
               <ul
-                style="list-style: none;"
+                style="list-style: none"
                 class="pa-0 accent--text text-subtitle-1 text-sm-h6 font-italic"
               >
                 <li class="my-4">home-care</li>
@@ -200,7 +237,9 @@
               enhancements other than sizing.
             </div>
 
-            <div class="text-body-2 secondary--text font-weight-light">
+            <div
+              class="text-subtitle-1 secondary--text font-weight-light mt-12 font-weight-bold"
+            >
               Bottom line teeth whitening works. It’s a matter of concentration
               and duration. You will get results!!!
             </div>
@@ -212,43 +251,104 @@
           ></div>
 
           <v-col cols="12" sm="6" class="order-first order-sm-last">
-            <v-img eager  src="whitening-1.svg" />
-            <div
-              class="text-body-1 mb-4 md-text-h6 text-lg-h6 secondary--text font-weight-light"
-            >
-              Dr. Tekin restores dental implants. He has great working
-              relationships with Oral Surgeon’s and Periodontists to help in the
-              process. Schedule a cosmetic dentistry consultation with Dr. Tekin
-              to discuss your dental implant options.
-            </div>
+            <v-row justify="space-between">
+              <v-col
+                align="center"
+                class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
+              >
+                Before
+              </v-col>
+              <v-col
+                align="center"
+                class="text-h6 text-sm-h5 text-lg-h4 primary--text font-italic font-weight-light"
+              >
+                After
+              </v-col>
+            </v-row>
+            <v-row>
+              <v-img
+                eager
+                style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                class="secondary"
+                src="teeth-whitening.jpeg"
+              />
+            </v-row>
           </v-col>
         </v-row>
       </v-tab-item>
       <v-tab> Veneers </v-tab>
       <v-tab-item>
         <v-row justify="center">
-            <v-col cols="6" md="4">
-              <v-row
-                justify="center"
-                class="text-h6 text-sm-h5 accent--text font-italic font-weight-light"
-              >
-                Before
+          <v-col cols="6" md="4">
+            <v-row
+              justify="center"
+              class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
+            >
+              Before
+            </v-row>
+          </v-col>
+          <v-col cols="6" md="4">
+            <v-row
+              justify="center"
+              class="text-h6 text-sm-h5 text-lg-h4 primary--text font-italic font-weight-light"
+            >
+              After
+            </v-row>
+          </v-col>
+        </v-row>
+        <v-row justify="center">
+          <!-- <v-carousel hide-delimiters v-model="model">
+            <v-carousel-item> -->
+              <!-- <v-row>
+                <v-col cols="6">
+                  <v-img
+                    eager
+                    max-height="150"
+                    style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                    class="accent mt-6"
+                    src="new-veneer-before.jpg"
+                  />
+                </v-col>
+                <v-col cols="6">
+                  <v-img
+                    eager
+                    max-height="150"
+                    style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                    class="primary mt-6"
+                    src="new-veneer-after.jpg"
+                  />
+                </v-col>
+              </v-row> -->
+            <!-- </v-carousel-item>
+            <v-carousel-item> -->
+              <v-row>
+                <v-col cols="6">
+                  <v-img
+                    eager
+                    max-height="150"
+                    style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                    class="accent mt-6"
+                    src="veneer-before-2.jpg"
+                  />
+                </v-col>
+                <v-col cols="6">
+                  <v-img
+                    eager
+                    max-height="150"
+                    style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                    class="primary mt-6"
+                    src="veneer-after-2.jpg"
+                  />
+                </v-col>
               </v-row>
-              <v-img eager  class="mt-8" src="new-veneer-before.jpg" />
-            </v-col>
-            <v-col cols="6" md="4">
-              <v-row
-                justify="center"
-                class="text-h6 text-sm-h5 primary--text font-italic font-weight-light"
-              >
-                After
-              </v-row>
-              <v-img eager  class="mt-8" src="new-veneer-after.jpg" />
-            </v-col>
-          </v-row>
-        <v-row justify="space-around" align="center" class="">
+            <!-- </v-carousel-item>
+          </v-carousel> -->
+        </v-row>
+        <v-row justify="space-around" align="center">
           <v-col cols="12" sm="10">
-            <div class="text-subtitle-1 text-sm-h6 text-center secondary--text font-weight-light">
+            <div
+              class="text-subtitle-1 text-sm-h6 text-center secondary--text font-weight-light"
+            >
               Porcelain Veneers offer an amazing solution for all kinds of smile
               imperfections. Veneers can repair chips, cracks, discoloration,
               and close gaps with one of the most natural looking dental
@@ -258,8 +358,7 @@
               orthodontics” because they can provide the look of a perfectly
               straightened smile without the long wait of braces.
             </div>
-          </v-col>          
-    
+          </v-col>
         </v-row>
       </v-tab-item>
 
@@ -289,32 +388,27 @@
               </v-col>
             </v-row>
           </v-col>
-          <v-col cols="12" sm="6" class="order-first order-sm-last">
+          <div
+            v-if="!$vuetify.breakpoint.xs"
+            cols="1"
+            class="line primary"
+          ></div>
+          <v-col cols="12" sm="5" class="order-first order-sm-last">
             <v-row justify="center">
-              <v-col cols="6">
-                <div
-                   class="text-h6 text-sm-h5 accent--text font-italic font-weight-light" align="center"                   
-                >
-                  Before
-                </div>
-                 <v-img eager  class="mt-8" src="before-1.png" />
-                <v-img eager  class="mt-8" src="before-2.png" />
-              </v-col>
-              <v-col cols="6" align="center">
-                <div
-                   class="text-h6 text-sm-h5 primary--text font-italic font-weight-light"
-                >
-                  After
-                </div>
-                <v-img eager  class="mt-8" src="after-1.png" />
-                <v-img eager  class="mt-8" src="after-2.png" />
-              </v-col>
-            </v-row>            
+              <v-card class="pa-6">
+                <v-img
+                  style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                  class="secondary"
+                  eager
+                  src="bonding.png"
+                />
+              </v-card>
+            </v-row>
           </v-col>
         </v-row>
       </v-tab-item>
       <v-tab> Crowns </v-tab>
-      <v-tab-item>        
+      <v-tab-item>
         <v-row justify="space-around" class="">
           <v-col cols="12" sm="4">
             <div class="text-h6 primary--text mb-4 font-weight-light">
@@ -333,22 +427,22 @@
               <v-col cols="6">
                 <v-row
                   justify="center"
-                  class="text-h6 text-sm-h5 accent--text font-italic font-weight-light"
+                  class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
                 >
                   Before
                 </v-row>
-                <v-img eager  class="mt-8 pa-8" src="crowns-before-1.png" />
-                <v-img eager  class="mt-8 pa-8" src="crowns-before-2.png" />
+                <v-img eager class="mt-8 pa-8" src="crowns-before-1.png" />
+                <v-img eager class="mt-8 pa-8" src="crowns-before-2.png" />
               </v-col>
               <v-col cols="6">
                 <v-row
                   justify="center"
-                  class="text-h6 text-sm-h5 primary--text font-italic font-weight-light"
+                  class="text-h6 text-sm-h5 text-lg-h4 primary--text font-italic font-weight-light"
                 >
                   After
                 </v-row>
-                <v-img eager  class="mt-8 pa-8" src="crowns-after-1.png" />
-                <v-img eager  class="mt-8 pa-8" src="crowns-after-2.png" />
+                <v-img eager class="mt-8 pa-8" src="crowns-after-1.png" />
+                <v-img eager class="mt-8 pa-8" src="crowns-after-2.png" />
               </v-col>
             </v-row>
           </v-col>
@@ -369,7 +463,7 @@
                 edge
               </li>
             </ul>
-          </v-col>          
+          </v-col>
         </v-row>
       </v-tab-item>
       <v-tab> Fillings </v-tab>
@@ -393,7 +487,7 @@
               <v-col cols="6">
                 <v-row
                   justify="center"
-                  class="text-h6 text-sm-h5 accent--text font-italic font-weight-light"
+                  class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
                 >
                   Before
                 </v-row>
@@ -401,7 +495,7 @@
               <v-col cols="6">
                 <v-row
                   justify="center"
-                  class="text-h6 text-sm-h5 primary--text font-italic font-weight-light"
+                  class="text-h6 text-sm-h5 text-lg-h4 4 primary--text font-italic font-weight-light"
                 >
                   After
                 </v-row>
@@ -409,12 +503,12 @@
             </v-row>
             <v-row>
               <v-col cols="6">
-                <v-img eager  class="mt-8" src="filling-before.png" />
-                <v-img eager  class="mt-8" src="filling-before-2.png" />
+                <v-img eager class="mt-8" src="filling-before.png" />
+                <v-img eager class="mt-8" src="filling-before-2.png" />
               </v-col>
               <v-col cols="6">
-                <v-img eager  class="mt-8" src="filling-after.png" />
-                <v-img eager  class="mt-8" src="filling-after-2.png" />
+                <v-img eager class="mt-8" src="filling-after.png" />
+                <v-img eager class="mt-8" src="filling-after-2.png" />
               </v-col>
             </v-row>
           </v-col>
@@ -431,7 +525,7 @@ export default {
 </script>
 
 <style>
-.v-window__container {
+.v-window__container > .v-window-item {
   padding: 1rem;
   min-height: 600px !important;
 }
