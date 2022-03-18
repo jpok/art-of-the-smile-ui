@@ -5,16 +5,41 @@
       <Nuxt />
     </v-main>
 
-    <v-footer :absolute="!fixed" color="primary" class="white--text" app>      
-      
-        <!-- <v-icon class="pa-8">mdi-google</v-icon>
-        <v-icon class="pa-8">mdi-youtube</v-icon>
-        <v-icon class="pa-8">mdi-facebook</v-icon>
-        <v-icon class="pa-8">mdi-instagram</v-icon>            
-        <a class="pa-8">
-        <svg  width="30" height="25.882" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M42.9 240.32l99.62 48.61c19.2 9.4 16.2 37.51-4.5 42.71L30.5 358.45a22.79 22.79 0 0 1-28.21-19.6 197.16 197.16 0 0 1 9-85.32 22.8 22.8 0 0 1 31.61-13.21zm44 239.25a199.45 199.45 0 0 0 79.42 32.11A22.78 22.78 0 0 0 192.94 490l3.9-110.82c.7-21.3-25.5-31.91-39.81-16.1l-74.21 82.4a22.82 22.82 0 0 0 4.09 34.09zm145.34-109.92l58.81 94a22.93 22.93 0 0 0 34 5.5 198.36 198.36 0 0 0 52.71-67.61A23 23 0 0 0 364.17 370l-105.42-34.26c-20.31-6.5-37.81 15.8-26.51 33.91zm148.33-132.23a197.44 197.44 0 0 0-50.41-69.31 22.85 22.85 0 0 0-34 4.4l-62 91.92c-11.9 17.7 4.7 40.61 25.2 34.71L366 268.63a23 23 0 0 0 14.61-31.21zM62.11 30.18a22.86 22.86 0 0 0-9.9 32l104.12 180.44c11.7 20.2 42.61 11.9 42.61-11.4V22.88a22.67 22.67 0 0 0-24.5-22.8 320.37 320.37 0 0 0-112.33 30.1z"/></svg>
-        </a>
-       -->
+    <v-footer inset width="auto" color="primary" class="py-2 white--text" app>
+      <v-container fluid>
+        <v-row justify="center">                    
+          <v-spacer></v-spacer>
+          <v-col align="center" class="pa-0" cols="8" sm="6" >
+            <a
+              href="https://www.google.com/search?q=art%20smile%20location&sxsrf=APq-WBvlMQF-7eAQv-PnhgviqycPIJFpgQ:1647615154467&ei=h5w0YtDKDcOrqtsPnKeOmAM&oq=art+of+the+smile+loca&gs_lcp=Cgdnd3Mtd2l6EAMYADIGCAAQFhAeMgYIABAWEB46BAgjECc6CwguEIAEEMcBEK8BOggIIRAWEB0QHkoECEEYAUoECEYYAFDICViAGGDwHmgBcAB4AIABW4gB7gKSAQE1mAEAoAEBwAEB&sclient=gws-wiz&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=1846791852298051708&lqi=ChJhcnQgc21pbGUgbG9jYXRpb25I952ux-aAgIAIWg8QABABIglhcnQgc21pbGWSAQdkZW50aXN0mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5YY0hCdGVGQkJFQUWqAREQASoNIglhcnQgc21pbGUoAA&ved=2ahUKEwjdrojg9M_2AhVymmoFHTQzD2YQvS56BAgCEEo&rlst=f#lrd=0x88f50386ffffffff:0x54eb2a3990d0ab49,1,,,&rlfi=hd:;si:6119030945444047689,l,ChJhcnQgc21pbGUgbG9jYXRpb25Ipur5xeWAgIAIWhEQABABGAAiCWFydCBzbWlsZZIBB2RlbnRpc3SaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUkRhMlZUZFd4UlJSQUKqAREQASoNIglhcnQgc21pbGUoAA;mv:[[33.8460415,-84.3684854],[33.8437406,-84.432357]]"
+              ><v-icon class="mx-2">mdi-google</v-icon></a
+            >
+            <a href="https://www.youtube.com/uer/DrBrockTekin"><v-icon class="mx-2">mdi-youtube</v-icon></a>
+            <a href="https://www.facebook.com/ArtoftheSmile/"><v-icon class="mx-2">mdi-facebook</v-icon></a>
+            <a href="https://www.instagram.com/art_of_the_smile/?hl=en"
+              ><v-icon class="mx-2">mdi-instagram</v-icon></a
+            >
+            <a href="https://www.yelp.com/biz/art-of-the-smile-atlanta">
+              <svg
+                class="mb-n1"
+                width="30"
+                height="20.882"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M42.9 240.32l99.62 48.61c19.2 9.4 16.2 37.51-4.5 42.71L30.5 358.45a22.79 22.79 0 0 1-28.21-19.6 197.16 197.16 0 0 1 9-85.32 22.8 22.8 0 0 1 31.61-13.21zm44 239.25a199.45 199.45 0 0 0 79.42 32.11A22.78 22.78 0 0 0 192.94 490l3.9-110.82c.7-21.3-25.5-31.91-39.81-16.1l-74.21 82.4a22.82 22.82 0 0 0 4.09 34.09zm145.34-109.92l58.81 94a22.93 22.93 0 0 0 34 5.5 198.36 198.36 0 0 0 52.71-67.61A23 23 0 0 0 364.17 370l-105.42-34.26c-20.31-6.5-37.81 15.8-26.51 33.91zm148.33-132.23a197.44 197.44 0 0 0-50.41-69.31 22.85 22.85 0 0 0-34 4.4l-62 91.92c-11.9 17.7 4.7 40.61 25.2 34.71L366 268.63a23 23 0 0 0 14.61-31.21zM62.11 30.18a22.86 22.86 0 0 0-9.9 32l104.12 180.44c11.7 20.2 42.61 11.9 42.61-11.4V22.88a22.67 22.67 0 0 0-24.5-22.8 320.37 320.37 0 0 0-112.33 30.1z"
+                />
+              </svg>
+            </a>
+          </v-col>
+          
+          <v-col cols="4" sm="3" align="end" class="pa-0">
+            (404) 355-5332
+            <!-- <p>3280 Howell Mill Rd NW. Ste 112 Atlanta, GA 30327. West Paces Ferry / Northside, Buckhead</p> -->
+          </v-col>
+        </v-row>
+      </v-container>
     </v-footer>
   </v-app>
 </template>
@@ -49,11 +74,9 @@ export default {
 </script>
 
 <style>
-
 .carousel-3d-slide {
-  background-color: transparent !important;     
+  background-color: transparent !important;
 }
-
 
 .carousel-3d-container figure {
   margin: 0;

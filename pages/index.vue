@@ -23,7 +23,7 @@
         </p>
       </v-col>
       <v-col cols="12" sm="6" align="center" class="order-first order-sm-last">
-        <v-img eager max-width="27rem" src="/invisalign-woman.png" class="mb-8" alt="invisalign-woman" />
+        <nuxt-img preload sizes="xl:25vw lg:25vw md:25vw sm:70vw xs:70vw" src="/invisalign-woman.png" class="mb-8" alt="invisalign-woman" />
 
         <v-row justify="center" align="center">
           <v-col>
