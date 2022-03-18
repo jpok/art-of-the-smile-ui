@@ -14,7 +14,7 @@
         <carousel-3d border="0">
           <slide :index="0">
             <figure>
-              <v-img eager  src="art/art-1.jpg" />
+              <nuxt-img  src="/art/art-1.jpg" />
               <figcaption>
                 Sundown Across the Lake in Tuscany by: Ruth Barett
               </figcaption>
@@ -22,13 +22,13 @@
           </slide>
           <slide :index="1">
             <figure>
-              <v-img eager  src="art/art-2.jpg" />
+              <nuxt-img  src="/art/art-2.jpg" />
               <figcaption>Golden Bars by: Ruth Barett</figcaption>
             </figure>
           </slide>
           <slide :index="2">
             <figure>
-              <v-img eager  src="art/art-3.jpg" />
+              <nuxt-img  src="/art/art-3.jpg" />
               <figcaption>
                 Twilight Road Through Tuscany by: Ruth Barett
               </figcaption>
@@ -36,25 +36,25 @@
           </slide>
           <slide :index="3">
             <figure>
-              <v-img eager  src="art/art-4.jpg" />
+              <nuxt-img  src="/art/art-4.jpg" />
               <figcaption>The Forrest by: Jeff Lange</figcaption>
             </figure>
           </slide>
           <slide :index="4">
             <figure>
-              <v-img eager  src="art/art-5.jpg" />
+              <nuxt-img  src="/art/art-5.jpg" />
               <figcaption>Concentric Circles by: Jeff Lange</figcaption>
             </figure>
           </slide>
           <slide :index="5">
             <figure>
-              <v-img eager  src="art/art-6.jpg" />
+              <nuxt-img  src="/art/art-6.jpg" />
               <figcaption>Stacked Yellow Roses by: Keith Abney</figcaption>
             </figure>
           </slide>
           <slide :index="6">
             <figure>
-              <v-img eager  src="art/art-7.jpg" />
+              <nuxt-img  src="/art/art-7.jpg" />
               <figcaption></figcaption>
             </figure>
           </slide>

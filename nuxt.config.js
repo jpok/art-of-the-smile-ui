@@ -6,8 +6,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - art-of-the-smile-ui',
-    title: 'art-of-the-smile-ui',
+    titleTemplate: '%s - Art of the Smile',
+    title: 'Art of the Smile',
     htmlAttrs: {
       lang: 'en',
     },
@@ -36,6 +36,7 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
