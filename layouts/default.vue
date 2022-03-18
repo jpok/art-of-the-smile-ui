@@ -109,4 +109,41 @@ body {
     Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   margin: 0;
 }
+
+@keyframes right_to_left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes left_to_right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 2px;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-in-left {    
+  animation: left_to_right 3s ease;  
+}
+
+.slide-in-right {
+  animation: right_to_left 3s ease;  
+}
+
+
 </style>
