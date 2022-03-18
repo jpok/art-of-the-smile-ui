@@ -54,14 +54,13 @@
     <v-row justify="space-around">
       <v-col
         cols="12"
-        md="4"
+        md="6"
         align="center"
         v-for="member in team"
         :key="member.img"
       >
         <v-card flat>                      
-          <v-img
-            style="z-index:2;"
+          <v-img            
             eager           
             :src="member.img"
           >                    
@@ -97,11 +96,11 @@ export default {
           img: 'christina.jpg',          
           bio: 'Originally from Mississippi, Christina moved to Atlanta 2 years ago. Graduating in 2002 from The University of Mississippi Medical Center with a Bachelor’s in Dental Hygiene, Christina brings over 17 years of experience to our team. She truly enjoys educating patients about their oral health and making them feel cared for and comfortable while being treated. During her leisure time, Christina enjoys spending time with family, friends and her fur babies. She also enjoys traveling, cooking, dining at the many restaurants Atlanta has to offer and going to church . She also enjoys traveling, cooking and dining at the many restaurants Atlanta has to offer.',
         },
-        // {
-        //   name: 'Evelina',
-        //   img: 'evelina.png',          
-        //   bio: 'Evelina is originally from Hoboken, New Jersey. She moved to Atlanta in 2012 after graduating from Kean University with a Bachelor`s in Business Administration. She joins our team with 7 years of experience managing dental practices. She loves to spend time with her 11-year-old twins Lilly and Lina. On her time off she enjoys traveling, going to concerts and volunteering at her church',
-        // },
+        {
+          name: 'Evelina',
+          img: 'evelina.jpg',          
+          bio: 'Evelina is originally from Hoboken, New Jersey. She moved to Atlanta in 2012 after graduating from Kean University with a Bachelor`s in Business Administration. She joins our team with 7 years of experience managing dental practices. She loves to spend time with her 11-year-old twins Lilly and Lina. On her time off she enjoys traveling, going to concerts and volunteering at her church',
+        },
       ],
     }
   },
