@@ -22,8 +22,8 @@
           needs. The practice is a synergistic blend of artistry and technology.
         </p>
       </v-col>
-      <v-col cols="12" sm="6" class="order-first order-sm-last">
-        <v-img eager  src="/invisalign-woman.png" class="mb-8" alt="invisalign-woman" />
+      <v-col cols="12" sm="6" align="center" class="order-first order-sm-last">
+        <v-img eager max-width="27rem" src="/invisalign-woman.png" class="mb-8" alt="invisalign-woman" />
 
         <v-row justify="center" align="center">
           <v-col>

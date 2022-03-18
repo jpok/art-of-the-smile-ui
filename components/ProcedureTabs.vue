@@ -9,17 +9,16 @@
     >
       <v-tab> Invisalign </v-tab>
       <v-tab-item>
-        <v-row justify="center">
-          <v-img
+        <v-row no-gutters justify="center">
+          <v-img            
             contain
             eager
-            max-width="35rem"
-            src="/invisalign-woman.png"
-            class="ml-n10"
+            max-width="20rem"
+            src="/invisalign-woman.png"            
             alt="invisalign-woman"
+            class="ma-0"
           />
         </v-row>
-        <!-- <div cols="1" class="line-hor primary"></div> -->
 
         <v-row justify="space-around" class="">
           <v-col cols="12" sm="4">
@@ -559,7 +558,7 @@ export default {
 <style>
 .v-window__container {
   padding: 1rem;
-  min-height: 700px !important;
+  min-height: 600px !important;
 }
 </style>
 
