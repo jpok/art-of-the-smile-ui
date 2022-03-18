@@ -9,8 +9,20 @@
     >
       <v-tab> Invisalign </v-tab>
       <v-tab-item>
-        <v-row justify="space-around" align="center" class="">
-          <v-col cols="12">
+        <v-row justify="center">
+          <v-img
+            contain
+            eager
+            max-width="35rem"
+            src="/invisalign-woman.png"
+            class="ml-n10"
+            alt="invisalign-woman"
+          />
+        </v-row>
+        <!-- <div cols="1" class="line-hor primary"></div> -->
+
+        <v-row justify="space-around" class="">
+          <v-col cols="12" sm="4">
             <div
               class="text-subtitle-1 text-sm-h6 primary--text font-weight-light"
             >
@@ -23,10 +35,10 @@
               Invisalign uses a series of clear, removable, aligners. You can
               smile more during treatment as well as after. Invisalign is made
               with 3-D computer imaging technology and has been proven
-              effective. More than 70% of orthodontists in the US and Canada are
-              certified to treat with Invisalign.
+              effective.
             </div>
-
+          </v-col>
+          <v-col cols="12" sm="4">
             <div
               class="text-subtitle-1 text-sm-h6 primary--text font-weight-light"
             >
@@ -45,7 +57,8 @@
               treatment plan when you start so you can see how your straight
               teeth will look when your treatment is complete.
             </div>
-
+          </v-col>
+          <v-col cols="12" sm="4">
             <div
               class="text-subtitle-1 text-sm-h6 primary--text font-weight-light"
             >
@@ -279,19 +292,20 @@
       <v-tab> Veneers </v-tab>
       <v-tab-item>
         <v-row justify="center">
-          <v-col cols="6"            
-              align="center"
-              class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
-            >
-              Before
-            
+          <v-col
+            cols="6"
+            align="center"
+            class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
+          >
+            Before
           </v-col>
-          <v-col cols="6"            
-              justify="center"
-              align="center"
-              class="text-h6 text-sm-h5 text-lg-h4 primary--text font-italic font-weight-light"
-            >
-              After            
+          <v-col
+            cols="6"
+            justify="center"
+            align="center"
+            class="text-h6 text-sm-h5 text-lg-h4 primary--text font-italic font-weight-light"
+          >
+            After
           </v-col>
         </v-row>
         <v-row justify="center">
@@ -321,13 +335,13 @@
             <v-carousel-item> -->
           <v-row>
             <v-col cols="6" align="center">
-                 <v-img
-                    eager
-                    max-width="300"
-                    style="border-radius: 20px; border: 4px solid; opacity: 0.9"
-                    class="accent mt-6"
-                    src="new-veneer-before.jpg"
-                  />
+              <v-img
+                eager
+                max-width="300"
+                style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                class="accent mt-6"
+                src="new-veneer-before.jpg"
+              />
               <v-img
                 eager
                 max-width="300"
@@ -337,13 +351,13 @@
               />
             </v-col>
             <v-col cols="6" align="center">
-               <v-img
-                    eager
-                    max-width="300"
-                    style="border-radius: 20px; border: 4px solid; opacity: 0.9"
-                    class="primary mt-6"
-                    src="new-veneer-after.jpg"
-                  />
+              <v-img
+                eager
+                max-width="300"
+                style="border-radius: 20px; border: 4px solid; opacity: 0.9"
+                class="primary mt-6"
+                src="new-veneer-after.jpg"
+              />
               <v-img
                 eager
                 max-width="300"
@@ -429,7 +443,12 @@
             >
               Before
             </v-row>
-            <v-img eager max-width="40rem" class="mt-8 pa-8" src="crown-before.jpg" />
+            <v-img
+              eager
+              max-width="40rem"
+              class="mt-8 pa-8"
+              src="crown-before.jpg"
+            />
           </v-col>
           <v-col cols="6">
             <v-row
@@ -438,7 +457,12 @@
             >
               After
             </v-row>
-            <v-img eager max-width="40rem" class="mt-8 pa-8" src="crown-after.jpg" />
+            <v-img
+              eager
+              max-width="40rem"
+              class="mt-8 pa-8"
+              src="crown-after.jpg"
+            />
           </v-col>
         </v-row>
 
@@ -533,9 +557,9 @@ export default {
 </script>
 
 <style>
-.v-window__container > .v-window-item {
+.v-window__container {
   padding: 1rem;
-  min-height: 600px !important;
+  min-height: 700px !important;
 }
 </style>
 
@@ -544,5 +568,11 @@ export default {
   width: 0.25rem;
   margin: 1rem;
   height: 20rem !important;
+}
+
+.line-hor {
+  width: 90%;
+  margin: 1rem;
+  height: 0.25rem;
 }
 </style>

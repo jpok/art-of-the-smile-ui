@@ -49,6 +49,16 @@ export default {
 </script>
 
 <style>
+
+.carousel-3d-slide {
+  background-color: transparent !important;     
+}
+
+
+.carousel-3d-container figure {
+  margin: 0;
+}
+
 .v-btn {
   border-radius: 28px !important;
 }

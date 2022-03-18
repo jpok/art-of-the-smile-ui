@@ -136,15 +136,7 @@ export default {
 }
 </script>
 
-<style>
-.carousel-3d-slide {
-  background-color: transparent;     
-}
-
-
-.carousel-3d-container figure {
-  margin: 0;
-}
+<style scoped>
 
 .carousel-3d-container figcaption {
   position: absolute;

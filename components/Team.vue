@@ -14,16 +14,24 @@
       </v-col>
       <v-row v-if="$vuetify.breakpoint.xs" justify="center">
         <!-- <v-col cols="6"> -->
-          <v-img eager  max-width="250px" class="" src="/degrees.png" alt="degrees" />
+        <v-img
+          eager
+          max-width="250px"
+          class=""
+          src="/degrees.png"
+          alt="degrees"
+        />
         <!-- </v-col> -->
       </v-row>
       <v-col cols="12" sm="6" class="pa-12">
-        <v-img eager  src="/brock.png" alt="dentist brock tekin" />
+        <v-img eager src="/brock.png" alt="dentist brock tekin">
+          <div class="brock font-italic">Dr. Brock Tekin</div>  
+        </v-img>
       </v-col>
       <v-col cols="12" sm="3">
         <v-row>
           <v-col v-if="!$vuetify.breakpoint.xs" cols="6" sm="12">
-            <v-img eager  src="/degrees.png" alt="degrees" />
+            <v-img eager src="/degrees.png" alt="degrees" />
           </v-col>
 
           <v-col cols="12">
@@ -47,14 +55,28 @@
       </div>
     </v-row>
     <v-row justify="space-around">
-      <v-col cols="12" md="4" v-for="member in team" :key="member.img">        
-        <v-card flat>
-        <v-img eager  :src="member.img"/>
-        <v-card-text class="secondary--text  text-center">
-          {{ member.bio }}
-        </v-card-text>
+      <v-col
+        cols="12"
+        md="6"
+        align="center"
+        v-for="member in team"
+        :key="member.img"
+      >
+        <v-card flat>                      
+          <v-img
+            style="z-index:2;"
+            eager
+            :max-width="member.width"
+            :style="{ margin: member.margin }"
+            :src="member.img"
+          >
+          <div class="name font-italic" :style="[{right: member.right}]">{{member.name }}</div>          
+          </v-img>
+          <v-card-text class="secondary--text text-center">
+            {{ member.bio }}
+          </v-card-text>
         </v-card>
-      </v-col>      
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -65,15 +87,50 @@ export default {
   data() {
     return {
       team: [
-        { img: 'sterling.png', bio: 'Originally from San Diego and Tampa, Sterling has been in Atlanta since 1996. She received a Pre-Nursing degree from Gainesville Sate and moved to Buckhead thereafter. She worked in Oral Surgery for five years before joining Dr. Tekin’s team at Art of the Smile. Sterling enjoys watching football , trying new restaurants and spending time with friends and her family who reside in Hilton Head.' },
-        { img: 'jore.png', bio: 'Jore, Our New Office Manager, truly has a passion for making people smile. She has spent the last ten years helping people achieve the smile of their dreams. Her expertise spans from Dental Assisting to Practice Management. She prides herself on providing the best patient care possible by making each patient feel appreciated and comfortable. She was born and raised in Southwest Atlanta and is the mother of 17-year-old Chloe. Her spare time is spent attending Chloe’s Varsity and AAU basketball games, cooking for her family, and watching the Georgia Bulldogs. Jore is very active in her community, living by the mantra “To whom much is given, much is required…' },
-        { img: 'christina.png', bio: 'Originally from Mississippi, Christina moved to Atlanta 2 years ago. Graduating in 2002 from The University of Mississippi Medical Center with a Bachelor’s in Dental Hygiene, Christina brings over 17 years of experience to our team. She truly enjoys educating patients about their oral health and making them feel cared for and comfortable while being treated. During her leisure time, Christina enjoys spending time with family, friends and her fur babies. She also enjoys traveling, cooking, dining at the many restaurants Atlanta has to offer and going to church . She also enjoys traveling, cooking and dining at the many restaurants Atlanta has to offer.' },
-      ]
+        {
+          name: 'Sterling',
+          img: 'sterling.png',
+          width: '35rem',
+          right: '100px',
+          bio: 'Originally from San Diego and Tampa, Sterling has been in Atlanta since 1996. She received a Pre-Nursing degree from Gainesville Sate and moved to Buckhead thereafter. She worked in Oral Surgery for five years before joining Dr. Tekin’s team at Art of the Smile. Sterling enjoys watching football , trying new restaurants and spending time with friends and her family who reside in Hilton Head.',
+        },
+        {
+          name: 'Jore',
+          img: 'jore.png',
+          width: '35rem',
+          right: '110px',
+          bio: 'Jore, Our New Office Manager, truly has a passion for making people smile. She has spent the last ten years helping people achieve the smile of their dreams. Her expertise spans from Dental Assisting to Practice Management. She prides herself on providing the best patient care possible by making each patient feel appreciated and comfortable. She was born and raised in Southwest Atlanta and is the mother of 17-year-old Chloe. Her spare time is spent attending Chloe’s Varsity and AAU basketball games, cooking for her family, and watching the Georgia Bulldogs. Jore is very active in her community, living by the mantra “To whom much is given, much is required…',
+        },
+        {
+          name: 'Christina',
+          img: 'christina.png',
+          width: '35rem',
+          right: '100px',
+          bio: 'Originally from Mississippi, Christina moved to Atlanta 2 years ago. Graduating in 2002 from The University of Mississippi Medical Center with a Bachelor’s in Dental Hygiene, Christina brings over 17 years of experience to our team. She truly enjoys educating patients about their oral health and making them feel cared for and comfortable while being treated. During her leisure time, Christina enjoys spending time with family, friends and her fur babies. She also enjoys traveling, cooking, dining at the many restaurants Atlanta has to offer and going to church . She also enjoys traveling, cooking and dining at the many restaurants Atlanta has to offer.',
+        },
+        {
+          name: 'Evelina',
+          img: 'evelina.png',
+          width: '23.5rem',
+          right: '0px',
+          bio: 'Evelina is originally from Hoboken, New Jersey. She moved to Atlanta in 2012 after graduating from Kean University with a Bachelor`s in Business Administration. She joins our team with 7 years of experience managing dental practices. She loves to spend time with her 11-year-old twins Lilly and Lina. On her time off she enjoys traveling, going to concerts and volunteering at her church',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 
-<style>
+<style scoped>
+  .name {
+    position: absolute;    
+    top: 150px;
+  }
 
+  .brock {
+    position: absolute;    
+    top: 100px;
+    right: 30px;
+  }
+  
 </style>
