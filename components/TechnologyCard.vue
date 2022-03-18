@@ -13,17 +13,15 @@
         <v-card-actions v-if="toolTipImage">
         <span v-if="!$vuetify.breakpoint.xs" class="accent--text text-center captionfont-weight-bold">
           Hover to view photo
-        </span>
-        <span v-if="$vuetify.breakpoint.xs" class="accent--text text-center captionfont-weight-bold">
-          Click to view photo
-        </span>
-        <v-icon class="arrows" color="accent" size="1rem"
+        </span>        
+        <v-img v-if="$vuetify.breakpoint.xs" eager :src="toolTipImage" />        
+        <v-icon v-if="!$vuetify.breakpoint.xs" class="arrows" color="accent" size="1rem"
           >mdi-chevron-double-right</v-icon
         >
         </v-card-actions>
       </v-card>
     </template>
-    <v-img v-if="toolTipImage" eager max-width="300" :src="toolTipImage" />
+    <v-img v-if="!$vuetify.breakpoint.xs" eager max-width="300" :src="toolTipImage" />
   </v-tooltip>
 </template>
 
