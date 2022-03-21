@@ -34,7 +34,7 @@
 
           <v-row>
             <v-text-field
-              prepend-icon="mdi-phone"
+              prepend-icon="mdi-email"
               required
               type="email"
               v-model="email"
