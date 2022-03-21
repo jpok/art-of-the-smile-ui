@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="pa-2">
     <v-row align="center">
       <v-col cols="12" sm="8">
         <div
@@ -10,8 +10,8 @@
         </div>
       </v-col>
     </v-row>
-    <v-row align="start" justify="space-around">
-      <v-col cols="12" sm="6" class="mt-12 pl-6">
+    <v-row align="start" justify="space-around" class="ml-2 mr-2">
+      <v-col cols="12" sm="6" class="mt-12 pl-6 concave">
         <div
           style="line-height: 150%"
           class="text-body-1 fade-in-med md-text-h6 text-lg-h5 secondary--text font-weight-light"
@@ -32,7 +32,7 @@
           class="text-body-1 pl-sm-6 md-text-subtitle-1 mt-12 text-lg-h6 accent--text font-weight-light"
         >
           The practice is a synergistic blend of
-          <span class="slide-in-bottom">artistry and technology.</span>
+          <span class="fade-in-med secondary--text font-italic">artistry</span> and <span class="fade-in-med secondary--text font-italic">echnology.</span>
         </p>
         <!-- <nuxt-img preload style="opacity: .1;" sizes="sm:25px md:50px lg:40px" src="/dental-options.svg" class="mb-8" alt="art of the smile options" /> -->
       </v-col>
@@ -113,5 +113,13 @@ export default {
     font-style: italic;
   }
 }
+
+.concave {
+  /* -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000; */
+   box-shadow: inset 0 0 4px #000000;
+   border-radius: 2rem;      
+}
+
 
 </style>

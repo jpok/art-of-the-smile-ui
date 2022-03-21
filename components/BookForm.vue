@@ -20,7 +20,7 @@
         ><p class="secondary--text">We don't share your information</p></v-row
       >
       <v-row>
-        <v-col>
+        <v-col cols="6">
           <v-row>
             <v-icon class="mx-2">mdi-account</v-icon>
             <v-text-field
@@ -73,12 +73,12 @@
               type="text"
               v-model="relationship"
               name="relationship"
-              placeholder="Relationship to patient"
+              placeholder="Relation to patient"
             ></v-text-field>
           </v-row>
         </v-col>
 
-        <v-col>
+        <v-col cols="5" class="pl-2">
           <v-menu
             ref="dateMenu"
             nudge-left="120px"
@@ -93,6 +93,7 @@
               <v-text-field
                 class="primary--text"
                 v-model="date"
+                name="date"
                 label="Appointment Date"
                 prepend-icon="mdi-calendar"
                 readonly
@@ -109,7 +110,9 @@
               </v-btn>
             </v-date-picker>
           </v-menu>
-          <v-menu
+          <input type="time" name="apptTime" v-model="apptTime" 
+            min="09:00" max="18:00" required>
+          <!-- <v-menu
             ref="timeMenu"
             v-model="timeMenu"
             :close-on-content-click="false"
@@ -137,7 +140,7 @@
               full-width
               @click:minute="$refs.timeMenu.save(time)"
             ></v-time-picker>
-          </v-menu>
+          </v-menu> -->
 
           <v-row>
             <v-icon class="mx-2">mdi-reproduction</v-icon>
@@ -145,15 +148,16 @@
               v-model="procedureSelected"
               :items="procedures"
               label="procedure"
+              name="procedure selected"
               required
             ></v-select>
           </v-row>
 
             <v-col>
               <p class="secondary--text mx-2">New Patient?</p>
-              <v-radio-group row v-model="newPatient" class="ml-4">
-                <v-radio label="No" name="no" value="no"></v-radio>
-                <v-radio label="Yes" name="yes" value="yes"></v-radio>
+              <v-radio-group row v-model="newPatient" name="newPatient" class="ml-4">
+                <v-radio label="No" name="new patient" value="no"></v-radio>
+                <v-radio label="Yes" name="new patient" value="yes"></v-radio>
               </v-radio-group>
 
               <p
@@ -199,15 +203,15 @@ export default {
       procedures: ['Invisalign', 'Cosmetic', 'Cleaning', 'Other'],
       dateMenu: false,
       time: null,
+      apptTime: null,
       timeMenu: false,
       name: '',
       email: '',
-      phone: '',
-      message: '',
+      phone: '',      
       patientName: '',
       relationship: '',
       newPatient: 'no',
-     date: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
+      date: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
         .toISOString()
         .substr(0, 10),
     }
@@ -220,8 +224,8 @@ export default {
   methods: {
     sendEmail(e) {
       emailjs.sendForm(
-        'service_2k51y6n',
-        'template_tihwmkp',
+        'service_m706kjo',
+        'template_14m64ey',
         e.target,
         'user_2BbvsyWgj5hfnIXahvEpw'
       )
