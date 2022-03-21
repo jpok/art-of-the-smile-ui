@@ -13,7 +13,7 @@
           <v-img            
             contain
             eager
-            max-width="20rem"
+            max-width="12rem"
             src="/invisalign-woman.png"            
             alt="invisalign-woman"
             class="ma-0"
@@ -23,13 +23,13 @@
         <v-row justify="space-around" class="">
           <v-col cols="12" sm="4">
             <div
-              class="text-subtitle-1 text-sm-h6 primary--text font-weight-light"
+              class="text-subtitle-1 text-sm-h6 primary--text"
             >
               What is it?
             </div>
 
             <div
-              class="text-body-1 md-text-h6 mb-4 text-lg-h6 secondary--text font-weight-light"
+              class="text-body-1 mb-4 secondary--text font-weight-light"
             >
               Invisalign uses a series of clear, removable, aligners. You can
               smile more during treatment as well as after. Invisalign is made
@@ -39,13 +39,13 @@
           </v-col>
           <v-col cols="12" sm="4">
             <div
-              class="text-subtitle-1 text-sm-h6 primary--text font-weight-light"
+              class="text-subtitle-1 text-sm-h6 primary--text"
             >
               Why would I want it?
             </div>
 
             <div
-              class="text-body-1 md-text-h6 mb-4 text-lg-h6 secondary--text font-weight-light"
+              class="text-body-1 mb-4 secondary--text font-weight-light"
             >
               Not only are the aligners clear, they are removable, so you can
               eat and drink what you want while in treatment. Plus, brushing and
@@ -59,13 +59,13 @@
           </v-col>
           <v-col cols="12" sm="4">
             <div
-              class="text-subtitle-1 text-sm-h6 primary--text font-weight-light"
+              class="text-subtitle-1 text-sm-h6 primary--text"
             >
               How does it work?
             </div>
 
             <div
-              class="text-body-1 md-text-h6 mb-4 text-lg-h6 secondary--text font-weight-light"
+              class="text-body-1 mb-4secondary--text font-weight-light"
             >
               You wear each set of aligners for a week, removing them only to
               eat, drink, brush, and floss. As you replace each aligner with the

@@ -15,49 +15,49 @@
       </v-btn>
     </v-row>
 
-    <form @submit.prevent="sendEmail" class="pa-12">
+    <form @submit.prevent="sendEmail" class="pa-10" ref="BookForm">
       <v-row
         ><p class="secondary--text">We don't share your information</p></v-row
       >
       <v-row>
         <v-col cols="6">
           <v-row>
-            <v-icon class="mx-2">mdi-account</v-icon>
             <v-text-field
+              prepend-icon="mdi-account"
               required
               type="text"
               v-model="name"
               name="name"
-              placeholder="Your Name"
+              placeholder="Name"
             ></v-text-field>
           </v-row>
 
           <v-row>
-            <v-icon class="mx-2">mdi-email</v-icon>
             <v-text-field
+              prepend-icon="mdi-phone"
               required
               type="email"
               v-model="email"
               name="email"
-              placeholder="Your Email"
+              placeholder="Email"
             ></v-text-field>
           </v-row>
 
           <v-row>
-            <v-icon class="mx-2">mdi-phone</v-icon>
             <v-text-field
               type="text"
               required
+              prepend-icon="mdi-phone"
               v-model="phone"
               name="phone"
               v-mask="['(###) ###-####']"
-              placeholder="Your Phone Number"
+              placeholder="Phone"
             ></v-text-field>
           </v-row>
 
           <v-row>
-            <v-icon class="mx-2">mdi-badge-account-outline</v-icon>
             <v-text-field
+              prepend-icon="mdi-badge-account-outline"
               required
               type="text"
               v-model="patientName"
@@ -67,10 +67,10 @@
           </v-row>
 
           <v-row>
-            <v-icon class="mx-2">mdi-account-supervisor-circle</v-icon>
             <v-text-field
               required
               type="text"
+              prepend-icon="mdi-account-supervisor-circle"
               v-model="relationship"
               name="relationship"
               placeholder="Relation to patient"
@@ -78,7 +78,7 @@
           </v-row>
         </v-col>
 
-        <v-col cols="5" class="pl-2">
+        <v-col cols="6" class="pl-2">
           <v-menu
             ref="dateMenu"
             nudge-left="120px"
@@ -94,7 +94,7 @@
                 class="primary--text"
                 v-model="date"
                 name="date"
-                label="Appointment Date"
+                label="Date"
                 prepend-icon="mdi-calendar"
                 readonly
                 v-bind="attrs"
@@ -110,58 +110,56 @@
               </v-btn>
             </v-date-picker>
           </v-menu>
-          <input type="time" name="apptTime" v-model="apptTime" 
-            min="09:00" max="18:00" required>
-          <!-- <v-menu
-            ref="timeMenu"
-            v-model="timeMenu"
-            :close-on-content-click="false"
-            :nudge-right="40"
-            :return-value.sync="time"
-            transition="scale-transition"
-            offset-y
-            max-width="290px"
-            min-width="290px"
+          <v-text-field
+            prepend-icon="mdi-clock"
+            type="time"
+            name="apptTime"
+            v-model="apptTime"
+            min="09:00"
+            max="18:00"
+            required
           >
-            <template v-slot:activator="{ on, attrs }">
-              <v-text-field
-                v-model="time"
-                label="Time"
-                prepend-icon="mdi-clock-time-four-outline"
-                readonly
-                v-bind="attrs"
-                v-on="on"
-              ></v-text-field>
-            </template>
-            <v-time-picker
-              v-if="timeMenu"
-              v-model="time"
-              ampm-in-title
-              full-width
-              @click:minute="$refs.timeMenu.save(time)"
-            ></v-time-picker>
-          </v-menu> -->
+          </v-text-field>
 
           <v-row>
-            <v-icon class="mx-2">mdi-reproduction</v-icon>
             <v-select
+              class="px-2 pr-3"
               v-model="procedureSelected"
               :items="procedures"
               label="procedure"
+              prepend-icon="mdi-reproduction"
               name="procedure selected"
               required
             ></v-select>
           </v-row>
-
+          <v-row class="pl-10 pr-3">
+            <v-textarea
+              v-if="procedureSelected === 'Other'"
+              name="other"
+              label="Other Procedure Needed"
+              v-model="other"
+              rows="2"
+            >
+            </v-textarea>
+          </v-row>
+          <v-row>
             <v-col>
               <p class="secondary--text mx-2">New Patient?</p>
-              <v-radio-group row v-model="newPatient" name="newPatient" class="ml-4">
+              <v-radio-group
+                row
+                v-model="newPatient"
+                name="newPatient"
+                class="ml-4"
+              >
                 <v-radio label="No" name="new patient" value="no"></v-radio>
                 <v-radio label="Yes" name="new patient" value="yes"></v-radio>
               </v-radio-group>
 
               <p
-                :style="{visibility: newPatient == 'yes' ? 'visible' : 'hidden'}"                
+                v-if="!$vuetify.breakpoint.xs"
+                :style="{
+                  visibility: newPatient == 'yes' ? 'visible' : 'hidden',
+                }"
                 class="accent--text pa-2 text-body-2 font-weight-light"
               >
                 As a first time patient, please print and fill out our “New
@@ -174,7 +172,26 @@
                 >
               </p>
             </v-col>
+          </v-row>
         </v-col>
+      </v-row>
+      <v-row>
+        <p
+          v-if="$vuetify.breakpoint.xs"
+          :style="{
+            visibility: newPatient == 'yes' ? 'visible' : 'hidden',
+          }"
+          class="accent--text pa-2 text-body-2 font-weight-light"
+        >
+          As a first time patient, please print and fill out our “New Patient”
+          forms and bring them to your appointment. If you can't, no worries,
+          you can fill them in when you come in.
+          <br />
+          <br />
+          <a class="pdf-link" href="new-patient-form.pdf" target="_blank"
+            >New Patient Form</a
+          >
+        </p>
       </v-row>
       <v-row class="pt-4">
         <v-spacer></v-spacer>
@@ -207,19 +224,20 @@ export default {
       timeMenu: false,
       name: '',
       email: '',
-      phone: '',      
+      phone: '',
       patientName: '',
       relationship: '',
       newPatient: 'no',
       date: new Date(Date.now() - new Date().getTimezoneOffset() * 60000)
         .toISOString()
         .substr(0, 10),
+      other: '',
     }
   },
   computed: {
-      computedDateFormattedMomentjs () {
-        return this.date ? moment(this.date).format('dddd, MMMM Do YYYY') : ''
-      },      
+    computedDateFormattedMomentjs() {
+      return this.date ? moment(this.date).format('dddd, MMMM Do YYYY') : ''
+    },
   },
   methods: {
     sendEmail(e) {
@@ -238,17 +256,14 @@ export default {
     },
 
     clear() {
-      this.name = ''
-      this.email = ''
-      this.phone = ''
-      this.message = ''
+      this.procedureSelected = null
+      this.$refs['BookForm'].reset()
     },
   },
 }
 </script>
 
 <style scoped>
-
 .pdf-link {
   color: var(--v-primary-base) !important;
   text-decoration: underline !important;

@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Navbar />
-    <v-main>
+    <v-main style="margin-top: 50px">
       <Nuxt />
     </v-main>
 
@@ -74,6 +74,11 @@ export default {
 </script>
 
 <style>
+ input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none;
+  display: none;
+ }
+
 .carousel-3d-slide {
   background-color: transparent !important;
 }
@@ -137,6 +142,13 @@ body {
   }
 }
 
+  .v-text-field input {
+    font-size: .8em;
+  }
+
+.v-label {
+    font-size: .8em;
+}
 .slide-in-left {    
   animation: left_to_right 3s ease;  
 }
