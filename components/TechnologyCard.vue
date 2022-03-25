@@ -25,7 +25,7 @@
             Hover to view photo
           </span>
           <span
-            v-if="$vuetify.breakpoint.mobile"
+            v-if="$vuetify.breakpoint.width < 1080 && !$vuetify.breakpoint.xs"
             class="accent--text text-center captionfont-weight-bold"
           >
             Click to view photo
