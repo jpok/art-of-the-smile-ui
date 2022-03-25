@@ -16,9 +16,7 @@
       </v-col>
     </v-row>
 
-    <div      
-      class="primary--text text-center text-overline px-4"
-    >
+    <div class="primary--text text-center text-overline px-4">
       The health and appearance of your smile should be perfectly in balance,
       and our careful attention to detail reflects this principle
     </div>
@@ -30,4 +28,3 @@ export default {
   name: 'ProceduresPage',
 }
 </script>
-

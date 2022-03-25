@@ -25,30 +25,48 @@
             <v-row>
               <v-col cols="12" sm="6">
                 <ul style="list-style: none">
-                  <li><span class="font-weight-bold">Monday</span> 8:30-4:00pm</li>
-                  <li><span class="font-weight-bold"> Tuesday</span> 8:30-4:00pm</li>
-                  <li><span class="font-weight-bold"> Wednesday </span>7:30-3:30pm</li>
-                  <li><span class="font-weight-bold"> Thursday </span> 8:30-4:00pm</li>
-                  <li><span class="font-weight-bold">  Friday </span>7:30-2:00pm </li>
+                  <li>
+                    <span class="font-weight-bold">Monday</span> 8:30-4:00pm
+                  </li>
+                  <li>
+                    <span class="font-weight-bold"> Tuesday</span> 8:30-4:00pm
+                  </li>
+                  <li>
+                    <span class="font-weight-bold"> Wednesday </span>7:30-3:30pm
+                  </li>
+                  <li>
+                    <span class="font-weight-bold"> Thursday </span> 8:30-4:00pm
+                  </li>
+                  <li>
+                    <span class="font-weight-bold"> Friday </span>7:30-2:00pm
+                  </li>
                 </ul>
               </v-col>
 
               <v-col cols="12" sm="6">
                 <ul style="list-style: none">
                   <li class="mb-2">
-                    - <span class="font-weight-bold"> Off I-75 </span>: Take exit #255: West Paces/Northside - it’s
-                    closest <span class="font-weight-bold">to Northside Parkway (US-41): </span> turn west on Howell Mill
-                    Road. We are in the first building on the right: 
-                    <a class="primary--text" href="https://www.google.com/maps?ll=33.843864,-84.428935&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=1846791852298051708">
-                    3280 Howell
-                    Mill Road, the Northwest Medical Center.
-                    </a> (Do <span class="font-weight-bold">not</span> take #252 Howell Mill exit - you’ll be 7
-                    miles away!)
-                  </li>                  
+                    - <span class="font-weight-bold"> Off I-75 </span>: Take
+                    exit #255: West Paces/Northside - it’s closest
+                    <span class="font-weight-bold"
+                      >to Northside Parkway (US-41):
+                    </span>
+                    turn west on Howell Mill Road. We are in the first building
+                    on the right:
+                    <a
+                      class="primary--text"
+                      href="https://www.google.com/maps?ll=33.843864,-84.428935&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=1846791852298051708"
+                    >
+                      3280 Howell Mill Road, the Northwest Medical Center.
+                    </a>
+                    (Do <span class="font-weight-bold">not</span> take #252
+                    Howell Mill exit - you’ll be 7 miles away!)
+                  </li>
                   <li class="mb-2">
-                    -<span class="font-weight-bold"> Parking: </span> Come early, the parking lot can be full. If you
-                    enter the building from the street level, use the East
-                    Entrance. We are on the 1st floor, Suite 112
+                    -<span class="font-weight-bold"> Parking: </span> Come
+                    early, the parking lot can be full. If you enter the
+                    building from the street level, use the East Entrance. We
+                    are on the 1st floor, Suite 112
                   </li>
                 </ul>
                 <p class="text-subtitle-2 font-weight-light"></p
@@ -65,5 +83,4 @@
 export default {}
 </script>
 
-<style>
-</style>
+<style></style>

@@ -5,8 +5,10 @@
         <div
           class="text-h5 text-sm-h4 text-lg-h3 text-sm-h3 text-lg-h2 primary--text font-weight-light"
         >
-          <span>Art of the Smile</span> <span class="fade-in-fast"> is a 21st century
-          dental office with a new approach.</span>
+          <span>Art of the Smile</span>
+          <span class="fade-in-fast">
+            is a 21st century dental office with a new approach.</span
+          >
         </div>
       </v-col>
     </v-row>
@@ -22,16 +24,21 @@
         <p
           class="text-body-1 ml-sm-6 fade-in-slow md-text-subtitle-1 mt-12 text-lg-h6 primary--text text--darken-1 font-weight-light"
         >
-         in a uniquely nontraditional setting. The result is a comfortable and non-intimidating environment. Services
-          from basic teeth cleaning to advanced cosmetic makeovers are offered
-          to accommodate any dental needs.
+          in a uniquely nontraditional setting. The result is a comfortable and
+          non-intimidating environment. Services from basic teeth cleaning to
+          advanced cosmetic makeovers are offered to accommodate any dental
+          needs.
         </p>
 
         <p
           class="text-body-1 pl-sm-6 md-text-subtitle-1 mt-12 text-lg-h6 accent--text font-weight-light"
         >
           The practice is a synergistic blend of
-          <span class="fade-in-med secondary--text font-italic">artistry</span> and <span class="fade-in-med secondary--text font-italic">technology.</span>
+          <span class="fade-in-med secondary--text font-italic">artistry</span>
+          and
+          <span class="fade-in-med secondary--text font-italic"
+            >technology.</span
+          >
         </p>
         <!-- <nuxt-img preload style="opacity: .1;" sizes="sm:25px md:50px lg:40px" src="/dental-options.svg" class="mb-8" alt="art of the smile options" /> -->
       </v-col>
@@ -43,11 +50,7 @@
           alt="invisalign-woman"          
         /> -->
 
-        <v-img                
-          eager
-          src="/invisalign-woman.png"          
-          alt="invisalign-woman"          
-        />
+        <v-img eager src="/invisalign-woman.png" alt="invisalign-woman" />
 
         <v-row justify="center" align="center">
           <v-col>
@@ -56,7 +59,7 @@
                 class="text-body-1 font-italic md-text-h6 text-lg-h5 secondary--text font-weight-light"
               >
                 Providing Invisalign services since 2007
-              </div>              
+              </div>
             </v-row>
           </v-col>
         </v-row>
@@ -112,10 +115,8 @@ export default {
   }
 }
 
-.concave { 
-   box-shadow: inset 0 0 4px #000000;
-   border-radius: 2rem;      
+.concave {
+  box-shadow: inset 0 0 4px #000000;
+  border-radius: 2rem;
 }
-
-
 </style>

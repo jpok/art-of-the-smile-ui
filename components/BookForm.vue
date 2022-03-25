@@ -183,18 +183,39 @@
           }"
           class="accent--text text-body-2 font-weight-light"
         >
-          <span class="accent--text text-body-2 font-weight-light">Please fill out</span>
+          <span class="accent--text text-body-2 font-weight-light"
+            >Please fill out</span
+          >
           <a class="pdf-link" href="new-patient-form.pdf" target="_blank"
             >New Patient Form</a
           >
         </p>
       </v-row>
       <v-row>
-        <p v-if="$vuetify.breakpoint.xs"><span class="secondary--text text-body-2 text-sm-h6 mb-2 mr-1 font-weight-light">Now offering</span><a style="text-decoration: underline" class="font-weight-light primary--text mb-2 text-body-2 text-sm-h6" href="https://pay.balancecollect.com/m/artofsmile">online payment</a></p>
+        <p v-if="$vuetify.breakpoint.xs">
+          <span
+            class="secondary--text text-body-2 text-sm-h6 mb-2 mr-1 font-weight-light"
+            >Now offering</span
+          ><a
+            style="text-decoration: underline"
+            class="font-weight-light primary--text mb-2 text-body-2 text-sm-h6"
+            href="https://pay.balancecollect.com/m/artofsmile"
+            >online payment</a
+          >
+        </p>
       </v-row>
-      <v-row class="">        
-
-        <p v-if="!$vuetify.breakpoint.xs"><span class="secondary--text text-body-2 text-sm-h6 mb-2 mr-1 font-weight-light">Now offering</span><a style="text-decoration: underline" class="font-weight-light primary--text mb-2 text-body-2 text-sm-h6" href="https://pay.balancecollect.com/m/artofsmile">online payment</a></p>
+      <v-row class="">
+        <p v-if="!$vuetify.breakpoint.xs">
+          <span
+            class="secondary--text text-body-2 text-sm-h6 mb-2 mr-1 font-weight-light"
+            >Now offering</span
+          ><a
+            style="text-decoration: underline"
+            class="font-weight-light primary--text mb-2 text-body-2 text-sm-h6"
+            href="https://pay.balancecollect.com/m/artofsmile"
+            >online payment</a
+          >
+        </p>
         <v-spacer></v-spacer>
         <v-btn color="primary" class="mr-4" type="submit" value="Send">
           submit
@@ -204,7 +225,6 @@
     </form>
   </v-card>
 </template>
-
 
 <script>
 import { mask } from 'vue-the-mask'

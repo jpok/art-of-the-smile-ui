@@ -11,11 +11,7 @@
       <v-icon x-large> mdi-format-quote-open </v-icon>
     </v-row>
 
-    <v-carousel      
-      hide-delimiters
-      height="24rem"      
-      v-model="model"
-    >
+    <v-carousel hide-delimiters height="24rem" v-model="model">
       <v-carousel-item v-for="review in reviews" :key="review.reviewer">
         <v-col align="center">
           <div

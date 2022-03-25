@@ -1,13 +1,13 @@
 <template>
-  <v-container fluid >
+  <v-container fluid>
     <v-sheet elevation="2" class="rounded-pill">
-      <v-carousel      
-        v-model="model"  
+      <v-carousel
+        v-model="model"
         :height="$vuetify.breakpoint.xs ? '600px' : '400px'"
-        hide-delimiters        
+        hide-delimiters
       >
         <v-carousel-item v-for="item in items" :key="item.before">
-          <v-row justify="center" align="center" class="fill-height">            
+          <v-row justify="center" align="center" class="fill-height">
             <v-col cols="12" sm="5" align="center">
               <div
                 class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
@@ -68,7 +68,7 @@ export default {
   props: {
     items: {
       type: Array,
-      default: () => []
+      default: () => [],
     },
   },
   data: () => ({

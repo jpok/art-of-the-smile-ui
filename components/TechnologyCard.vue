@@ -2,13 +2,20 @@
   <v-tooltip right nudge-left="200px" color="white">
     <template v-slot:activator="{ on, attrs }">
       <v-card flat class="flex d-flex flex-column" v-bind="attrs" v-on="on">
-        
-          <div style="display: block; height: 70px" class="pl-4">
-            <v-row>
-              <v-img eager class="icon" max-width="50" :src="icon" />
-              <v-img class="pl-12" v-if="logo" max-height="40" contain max-width="90" eager :src="logo" />
-            </v-row>            
-          </div>        
+        <div style="display: block; height: 70px" class="pl-4">
+          <v-row>
+            <v-img eager class="icon" max-width="50" :src="icon" />
+            <v-img
+              class="pl-12"
+              v-if="logo"
+              max-height="40"
+              contain
+              max-width="90"
+              eager
+              :src="logo"
+            />
+          </v-row>
+        </div>
 
         <div class="primary--text pl-4">
           <v-row>

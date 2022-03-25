@@ -7,18 +7,28 @@
 
     <v-footer inset width="auto" color="primary" class="py-2 white--text" app>
       <v-container fluid>
-        <v-row justify="center" align="center"> 
+        <v-row justify="center" align="center">
           <div v-if="!$vuetify.breakpoint.xs">
-          <span class="secondary--text text-subtitle-1 mr-2 font-weight-light">Now offering </span><a style="text-decoration: underline" class="accent--text font-weight-light text-subtitle-1" href="https://pay.balancecollect.com/m/artofsmile">online payment</a>
-          </div>                   
+            <span class="secondary--text text-subtitle-1 mr-2 font-weight-light"
+              >Now offering </span
+            ><a
+              style="text-decoration: underline"
+              class="accent--text font-weight-light text-subtitle-1"
+              href="https://pay.balancecollect.com/m/artofsmile"
+              >online payment</a
+            >
+          </div>
           <v-spacer></v-spacer>
-          <v-col align="center" class="pa-0" cols="8" sm="6" >
-            <a
-              href="https://g.page/BrockTekinDDS?share"
+          <v-col align="center" class="pa-0" cols="8" sm="6">
+            <a href="https://g.page/BrockTekinDDS?share"
               ><v-icon class="mx-2">mdi-google</v-icon></a
             >
-            <a href="https://www.youtube.com/user/DrBrockTekin"><v-icon class="mx-2">mdi-youtube</v-icon></a>
-            <a href="https://www.facebook.com/ArtoftheSmile/"><v-icon class="mx-2">mdi-facebook</v-icon></a>
+            <a href="https://www.youtube.com/user/DrBrockTekin"
+              ><v-icon class="mx-2">mdi-youtube</v-icon></a
+            >
+            <a href="https://www.facebook.com/ArtoftheSmile/"
+              ><v-icon class="mx-2">mdi-facebook</v-icon></a
+            >
             <a href="https://www.instagram.com/art_of_the_smile/?hl=en"
               ><v-icon class="mx-2">mdi-instagram</v-icon></a
             >
@@ -36,9 +46,8 @@
               </svg>
             </a>
           </v-col>
-          
+
           <v-col cols="4" sm="3" align="end" class="pa-0">
-            
             <a class="white--text" href="tel:404-355-5332">(404) 355-5332</a>
             <!-- <p>3280 Howell Mill Rd NW. Ste 112 Atlanta, GA 30327. West Paces Ferry / Northside, Buckhead</p> -->
           </v-col>
@@ -78,10 +87,10 @@ export default {
 </script>
 
 <style>
- input[type="time"]::-webkit-calendar-picker-indicator {
+input[type='time']::-webkit-calendar-picker-indicator {
   background: none;
   display: none;
- }
+}
 
 .carousel-3d-slide {
   background-color: transparent !important;
@@ -146,20 +155,18 @@ body {
   }
 }
 
-  .v-text-field input {
-    font-size: .8em;
-  }
+.v-text-field input {
+  font-size: 0.8em;
+}
 
 .v-label {
-    font-size: .8em;
+  font-size: 0.8em;
 }
-.slide-in-left {    
-  animation: left_to_right 3s ease;  
+.slide-in-left {
+  animation: left_to_right 3s ease;
 }
 
 .slide-in-right {
-  animation: right_to_left 3s ease;  
+  animation: right_to_left 3s ease;
 }
-
-
 </style>

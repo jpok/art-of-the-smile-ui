@@ -24,8 +24,10 @@ export default {
   css: ['~/assets/main'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: '~/plugins/carousel-3d.js', mode: 'client' },
-            { src: '~/plugins/google-maps.js', mode: 'client' }],
+  plugins: [
+    { src: '~/plugins/carousel-3d.js', mode: 'client' },
+    { src: '~/plugins/google-maps.js', mode: 'client' },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -55,7 +57,7 @@ export default {
       options: { customProperties: true },
       dark: false,
       themes: {
-        light: {          
+        light: {
           primary: '#40C8E8',
           accent: '#E57E48',
           secondary: colors.grey.darken2,
@@ -72,7 +74,7 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
-        },        
+        },
       },
     },
   },

@@ -58,7 +58,7 @@
         :fullscreen="$vuetify.breakpoint.xs"
         :hide-overlay="$vuetify.breakpoint.xs"
         :scrollable="$vuetify.breakpoint.xs"
-        transition="dialog-top-transition"        
+        transition="dialog-top-transition"
         :width="$vuetify.breakpoint.xs ? $vuetify.breakpoint.xs.width : '80%'"
       >
         <template v-slot:activator="{ attrs }">
@@ -78,7 +78,6 @@
     </v-app-bar>
   </v-container>
 </template>
-          
 
 <script>
 export default {
@@ -101,4 +100,3 @@ export default {
   },
 }
 </script>
-
