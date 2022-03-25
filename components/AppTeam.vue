@@ -77,7 +77,7 @@
 
 <script>
 export default {
-  name: 'Team',
+  name: 'AppTeam',
   data() {
     return {
       team: [
