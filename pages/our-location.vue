@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <div
-      class="text-h6 text-sm-h4 text-lg-h3 text-center ma-8 primary--text font-weight-light"
+      class="text-h6 text-sm-h4 text-lg-h3 text-center mb-4 primary--text font-weight-light"
     >
       We are conveniently located in the heart of Buckhead
     </div>

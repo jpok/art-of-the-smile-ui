@@ -2,7 +2,7 @@
   <v-tabs color="primary" center-active slider-color="primary" grow show-arrows>
     <v-tab> Invisalign </v-tab>
     <v-tab-item>
-   <v-sheet elevation="5" class="rounded-pill pa-4">      
+   <v-sheet elevation="2" class="rounded-pill pa-4">      
       <v-row no-gutters align="center" justify="center">
         <v-col cols="12" sm="4" align="center" class="pa-2">
           <div

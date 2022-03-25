@@ -21,7 +21,7 @@
           </v-list-item>
 
           <v-list-item>
-            <NuxtLink class="pa-6" to="/location">Location</NuxtLink>
+            <NuxtLink class="pa-6" to="/our-location">Location</NuxtLink>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -49,7 +49,7 @@
         <NuxtLink class="pa-6" to="/procedures">Procedures</NuxtLink>
         <NuxtLink class="pa-6" to="/technology">Technology</NuxtLink>
         <NuxtLink class="pa-6" to="/our-office">Our Office</NuxtLink>
-        <NuxtLink class="pa-6" to="/location">Location</NuxtLink>
+        <NuxtLink class="pa-6" to="/our-location">Location</NuxtLink>
       </v-row>
       <v-spacer></v-spacer>
 

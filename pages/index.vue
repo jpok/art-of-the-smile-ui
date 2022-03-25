@@ -74,7 +74,7 @@
       <v-img eager class="slide-in-left" src="/swoosh.png" alt="swoosh" />
     </v-row>
 
-    <Team />
+    <AppTeam />
     <ReviewCarousel />
   </v-container>
 </template>

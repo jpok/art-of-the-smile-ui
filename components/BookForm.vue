@@ -258,7 +258,7 @@ export default {
 
     clear() {
       this.procedureSelected = null
-      this.$refs['BookForm'].reset()
+      this.$refs.BookForm.reset()
     },
   },
 }

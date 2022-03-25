@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Navbar />
+    <AppNavbar />
     <v-main style="margin-top: 50px">
       <Nuxt />
     </v-main>
