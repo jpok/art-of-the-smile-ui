@@ -181,21 +181,20 @@
           :style="{
             visibility: newPatient == 'yes' ? 'visible' : 'hidden',
           }"
-          class="accent--text pa-2 text-body-2 font-weight-light"
+          class="accent--text text-body-2 font-weight-light"
         >
-          As a first time patient, please print and fill out our “New Patient”
-          forms and bring them to your appointment. If you can't, no worries,
-          you can fill them in when you come in.
-          <br />
-          <br />
+          <span class="accent--text text-body-2 font-weight-light">Please fill out</span>
           <a class="pdf-link" href="new-patient-form.pdf" target="_blank"
             >New Patient Form</a
           >
         </p>
       </v-row>
-      <v-row class="pt-4 mb-4">        
+      <v-row>
+        <p v-if="$vuetify.breakpoint.xs"><span class="secondary--text text-body-2 text-sm-h6 mb-2 mr-1 font-weight-light">Now offering</span><a style="text-decoration: underline" class="font-weight-light primary--text mb-2 text-body-2 text-sm-h6" href="https://pay.balancecollect.com/m/artofsmile">online payment</a></p>
+      </v-row>
+      <v-row class="">        
 
-        <span class="secondary--text text-h6 mb-2 mr-2 font-weight-light">Now offering </span><a style="text-decoration: underline" class="font-weight-light primary--text mb-2 text-h6" href="https://pay.balancecollect.com/m/artofsmile">online payment</a>
+        <p v-if="!$vuetify.breakpoint.xs"><span class="secondary--text text-body-2 text-sm-h6 mb-2 mr-1 font-weight-light">Now offering</span><a style="text-decoration: underline" class="font-weight-light primary--text mb-2 text-body-2 text-sm-h6" href="https://pay.balancecollect.com/m/artofsmile">online payment</a></p>
         <v-spacer></v-spacer>
         <v-btn color="primary" class="mr-4" type="submit" value="Send">
           submit

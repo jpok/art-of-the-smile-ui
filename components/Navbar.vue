@@ -56,7 +56,9 @@
       <v-dialog
         v-model="dialog"
         :fullscreen="$vuetify.breakpoint.xs"
-        transition="dialog-top-transition"
+        :hide-overlay="$vuetify.breakpoint.xs"
+        :scrollable="$vuetify.breakpoint.xs"
+        transition="dialog-top-transition"        
         :width="$vuetify.breakpoint.xs ? $vuetify.breakpoint.xs.width : '80%'"
       >
         <template v-slot:activator="{ attrs }">
