@@ -11,10 +11,10 @@
           <v-spacer></v-spacer>
           <v-col align="center" class="pa-0" cols="8" sm="6" >
             <a
-              href="https://www.google.com/search?q=art%20smile%20location&sxsrf=APq-WBvlMQF-7eAQv-PnhgviqycPIJFpgQ:1647615154467&ei=h5w0YtDKDcOrqtsPnKeOmAM&oq=art+of+the+smile+loca&gs_lcp=Cgdnd3Mtd2l6EAMYADIGCAAQFhAeMgYIABAWEB46BAgjECc6CwguEIAEEMcBEK8BOggIIRAWEB0QHkoECEEYAUoECEYYAFDICViAGGDwHmgBcAB4AIABW4gB7gKSAQE1mAEAoAEBwAEB&sclient=gws-wiz&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=1846791852298051708&lqi=ChJhcnQgc21pbGUgbG9jYXRpb25I952ux-aAgIAIWg8QABABIglhcnQgc21pbGWSAQdkZW50aXN0mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5YY0hCdGVGQkJFQUWqAREQASoNIglhcnQgc21pbGUoAA&ved=2ahUKEwjdrojg9M_2AhVymmoFHTQzD2YQvS56BAgCEEo&rlst=f#lrd=0x88f50386ffffffff:0x54eb2a3990d0ab49,1,,,&rlfi=hd:;si:6119030945444047689,l,ChJhcnQgc21pbGUgbG9jYXRpb25Ipur5xeWAgIAIWhEQABABGAAiCWFydCBzbWlsZZIBB2RlbnRpc3SaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUkRhMlZUZFd4UlJSQUKqAREQASoNIglhcnQgc21pbGUoAA;mv:[[33.8460415,-84.3684854],[33.8437406,-84.432357]]"
+              href="https://g.page/BrockTekinDDS?share"
               ><v-icon class="mx-2">mdi-google</v-icon></a
             >
-            <a href="https://www.youtube.com/uer/DrBrockTekin"><v-icon class="mx-2">mdi-youtube</v-icon></a>
+            <a href="https://www.youtube.com/user/DrBrockTekin"><v-icon class="mx-2">mdi-youtube</v-icon></a>
             <a href="https://www.facebook.com/ArtoftheSmile/"><v-icon class="mx-2">mdi-facebook</v-icon></a>
             <a href="https://www.instagram.com/art_of_the_smile/?hl=en"
               ><v-icon class="mx-2">mdi-instagram</v-icon></a
