@@ -16,14 +16,13 @@
           style="line-height: 150%"
           class="text-body-1 fade-in-med md-text-h6 text-lg-h5 secondary--text font-weight-light"
         >
-          Dr. Brock Tekin’s focus is on providing state-of-the-art dentistry in
-          a uniquely nontraditional setting.
+          Dr. Brock Tekin’s focus is on providing state-of-the-art dentistry
         </div>
 
         <p
-          class="text-body-1 ml-sm-6 fade-in-slow md-text-subtitle-1 mt-12 text-lg-h6 primary--text font-weight-light"
+          class="text-body-1 ml-sm-6 fade-in-slow md-text-subtitle-1 mt-12 text-lg-h6 primary--text text--darken-1 font-weight-light"
         >
-          The result is a comfortable and non-intimidating environment. Services
+         in a uniquely nontraditional setting. The result is a comfortable and non-intimidating environment. Services
           from basic teeth cleaning to advanced cosmetic makeovers are offered
           to accommodate any dental needs.
         </p>
@@ -32,33 +31,26 @@
           class="text-body-1 pl-sm-6 md-text-subtitle-1 mt-12 text-lg-h6 accent--text font-weight-light"
         >
           The practice is a synergistic blend of
-          <span class="fade-in-med secondary--text font-italic">artistry</span> and <span class="fade-in-med secondary--text font-italic">echnology.</span>
+          <span class="fade-in-med secondary--text font-italic">artistry</span> and <span class="fade-in-med secondary--text font-italic">technology.</span>
         </p>
         <!-- <nuxt-img preload style="opacity: .1;" sizes="sm:25px md:50px lg:40px" src="/dental-options.svg" class="mb-8" alt="art of the smile options" /> -->
       </v-col>
       <v-col cols="12" sm="6" align="center" class="order-first order-sm-last">
         <nuxt-img
           preload
-          sizes="xl:25vw lg:25vw md:25vw sm:70vw xs:70vw"
-          src="/invisalign-woman.png"
-          class="mb-8"
-          alt="invisalign-woman"
+          sizes="xl:50vw lg:50vw md:50vw sm:70vw xs:70vw"
+          src="/invisalign-woman.png"          
+          alt="invisalign-woman"          
         />
 
         <v-row justify="center" align="center">
           <v-col>
-            <v-row justify="center" align="center">
+            <v-row justify="center" align="center" class="ma-2">
               <div
                 class="text-body-1 font-italic md-text-h6 text-lg-h5 secondary--text font-weight-light"
               >
-                Award Winning INVISALIGN provider
-              </div>
-              <v-img
-                eager
-                max-width="6rem"
-                src="/invisalign-reward.png"
-                alt="invisalign-reward"
-              />
+                Providing Invisalign services since 2007
+              </div>              
             </v-row>
           </v-col>
         </v-row>
@@ -114,9 +106,7 @@ export default {
   }
 }
 
-.concave {
-  /* -moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000; */
+.concave { 
    box-shadow: inset 0 0 4px #000000;
    border-radius: 2rem;      
 }
