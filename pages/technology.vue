@@ -77,7 +77,7 @@
           </li>
           <li>
             <span class="primary--text">PreviDent 5000 Plus Toothpaste </span>–
-            FFor patients that need extra fluoride.
+            For patients that need extra fluoride.
           </li>
           <li>
             <span class="primary--text"

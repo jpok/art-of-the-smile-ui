@@ -94,7 +94,7 @@ export default {
         {
           name: 'Christina',
           img: 'christina.jpg',          
-          bio: 'Originally from Mississippi, Christina moved to Atlanta 2 years ago. Graduating in 2002 from The University of Mississippi Medical Center with a Bachelor’s in Dental Hygiene, Christina brings over 17 years of experience to our team. She truly enjoys educating patients about their oral health and making them feel cared for and comfortable while being treated. During her leisure time, Christina enjoys spending time with family, friends and her fur babies. She also enjoys traveling, cooking, dining at the many restaurants Atlanta has to offer and going to church . She also enjoys traveling, cooking and dining at the many restaurants Atlanta has to offer.',
+          bio: 'Originally from Mississippi, Christina moved to Atlanta in 2017. Graduating in 2002 from The University of Mississippi Medical Center with a Bachelor’s in Dental Hygiene, Christina brings over 20 years of experience to our team. She truly enjoys educating patients about their oral health and making them feel cared for and comfortable while being treated. During her leisure time, Christina enjoys spending time with family, friends and her fur babies. She also enjoys traveling, cooking, dining at the many restaurants Atlanta has to offer and going to church',
         },
         {
           name: 'Evelina',
