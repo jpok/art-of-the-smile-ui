@@ -2,17 +2,18 @@
   <v-tabs color="primary" center-active slider-color="primary" grow show-arrows>
     <v-tab> Invisalign </v-tab>
     <v-tab-item>
-      <v-row no-gutters justify="center" align="center">        
-        <v-col cols="12" sm="4" align="center">
+   <v-sheet elevation="5" class="rounded-pill pa-4">      
+      <v-row no-gutters align="center" justify="center">
+        <v-col cols="12" sm="4" align="center" class="pa-2">
           <div
             class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
           >
             Before
           </div>
-          <nuxt-img
-            preload
+          <v-img
+            eager
+            max-width="50%"
             class="accent mt-6"
-            sizes="sm:150px md:200px lg:250px"
             style="border-radius: 20px; border: 1px solid; opacity: 0.9"
             src="inv-before.jpg"
           />
@@ -25,28 +26,30 @@
             src="/invisalign-woman.png"
             alt="invisalign-woman"
           /> -->
-          <v-img 
+          <v-img
             class="concave-circle"
-            eager             
-            src="/invisalign-woman.png" 
-            alt="invisalign-woman" />
+            eager
+            src="/invisalign-woman.png"
+            alt="invisalign-woman"
+          />
         </v-col>
 
-        <v-col cols="12" sm="4" align="center">
+        <v-col cols="12" sm="4" align="center" class="pa-2">
           <div
             class="text-h6 text-sm-h5 text-lg-h4 primary--text font-italic font-weight-light"
           >
             After
           </div>
-          <nuxt-img
+          <v-img
             preload
+            max-width="50%"
             class="primary mt-6"
-            sizes="sm:150px md:200px lg:250px"
             style="border-radius: 20px; border: 1px solid; opacity: 0.9"
             src="inv-after.jpg"
           />
         </v-col>
       </v-row>
+   </v-sheet>
 
       <v-row justify="space-around" class="">
         <v-col cols="12" sm="4">
@@ -295,8 +298,7 @@
     <v-tab-item>
       <v-row justify="center">
         <BeforeAndAfter
-          :items="[
-            { before: 'veneer-before-9.jpg', after: 'veneer-after-9.jpg' },
+          :items="[            
             { before: 'veneer-before.jpg', after: 'veneer-after.jpg' },
             { before: 'veneer-before-1.jpg', after: 'veneer-after-1.jpg' },
             { before: 'veneer-before-2.jpg', after: 'veneer-after-2.jpg' },
@@ -304,8 +306,7 @@
             { before: 'veneer-before-4.jpg', after: 'veneer-after-4.jpg' },
             { before: 'veneer-before-5.jpg', after: 'veneer-after-5.jpg' },
             { before: 'veneer-before-6.jpg', after: 'veneer-after-6.jpg' },
-            { before: 'veneer-before-7.jpg', after: 'veneer-after-7.jpg' },
-            { before: 'veneer-before-8.jpg', after: 'veneer-after-8.jpg' },
+            { before: 'veneer-before-7.jpg', after: 'veneer-after-7.jpg' },            
             { before: 'veneer-before-10.jpg', after: 'veneer-after-10.jpg' },
           ]"
         />
@@ -357,8 +358,10 @@
         <div v-if="!$vuetify.breakpoint.xs" cols="1" class="line primary"></div>
         <v-col cols="12" sm="5" class="order-first order-sm-last">
           <v-row justify="center">
-            <v-card class="pa-6 mt-4">
+            <v-card class="pa-6 mt-4 rounded">
               <v-img
+                contain
+                max-width="20rem"
                 style="border-radius: 20px; border: 4px solid"
                 class="secondary"
                 eager
@@ -472,7 +475,7 @@ export default {
 .v-tabs-items .v-window-item {
   padding: 1rem;
   min-height: 70vh !important; /* Adjust 270px to suits your needs */
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 </style>
 
