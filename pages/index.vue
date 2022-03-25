@@ -36,9 +36,15 @@
         <!-- <nuxt-img preload style="opacity: .1;" sizes="sm:25px md:50px lg:40px" src="/dental-options.svg" class="mb-8" alt="art of the smile options" /> -->
       </v-col>
       <v-col cols="12" sm="6" align="center" class="order-first order-sm-last">
-        <nuxt-img
-          preload
-          sizes="xl:50vw lg:50vw md:50vw sm:70vw xs:70vw"
+        <!-- <nuxt-img      
+          quality="100"
+          sizes="xl:800px lg:800px md:800px sm:70vw xs:70vw"
+          src="/invisalign-woman.png"          
+          alt="invisalign-woman"          
+        /> -->
+
+        <v-img                
+          eager
           src="/invisalign-woman.png"          
           alt="invisalign-woman"          
         />

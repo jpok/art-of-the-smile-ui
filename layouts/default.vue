@@ -7,7 +7,10 @@
 
     <v-footer inset width="auto" color="primary" class="py-2 white--text" app>
       <v-container fluid>
-        <v-row justify="center">                    
+        <v-row justify="center" align="center"> 
+          <div v-if="!$vuetify.breakpoint.xs">
+          <span class="secondary--text text-subtitle-1 mr-2 font-weight-light">Now offering </span><a style="text-decoration: underline" class="accent--text font-weight-light text-subtitle-1" href="https://pay.balancecollect.com/m/artofsmile">online payment</a>
+          </div>                   
           <v-spacer></v-spacer>
           <v-col align="center" class="pa-0" cols="8" sm="6" >
             <a
@@ -35,7 +38,8 @@
           </v-col>
           
           <v-col cols="4" sm="3" align="end" class="pa-0">
-            (404) 355-5332
+            
+            <a class="white--text" href="tel:404-355-5332">(404) 355-5332</a>
             <!-- <p>3280 Howell Mill Rd NW. Ste 112 Atlanta, GA 30327. West Paces Ferry / Northside, Buckhead</p> -->
           </v-col>
         </v-row>

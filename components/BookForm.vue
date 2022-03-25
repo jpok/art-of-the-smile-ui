@@ -193,7 +193,9 @@
           >
         </p>
       </v-row>
-      <v-row class="pt-4">
+      <v-row class="pt-4">        
+
+        <span class="secondary--text text-h6 mr-2 font-weight-light">Now offering </span><a style="text-decoration: underline" class="font-weight-light primary--text text-h6" href="https://pay.balancecollect.com/m/artofsmile">online payment</a>
         <v-spacer></v-spacer>
         <v-btn color="primary" class="mr-4" type="submit" value="Send">
           submit
