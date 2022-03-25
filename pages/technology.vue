@@ -14,6 +14,7 @@
           icon="intra-oral.svg"
           toolTipImage="intra-oral-pic.jpeg"
           title="Intra-oral Digital Scanner"
+          logo="itero-digital-practice.png"
           text="No more “goopy” impression material in your mouth! Scanning teeth to provide digital impressions is the latest technology in dentistry. Incredible accuracy combined with patient comfort is paramount at Art of the Smile!"
         />
       </v-col>
@@ -22,6 +23,7 @@
           icon="flashlight-icon.svg"
           title="ISolite Dryfield Illuminator"
           toolTipImage="isolate-pic.png"
+          logo="invisalign-provider.png"
           text="delivers a clear, well-lighted and open patient mouth. The combination of comfortable tongue and cheek retraction, continuous hands-free suction, and illumination helps speed procedures by 30%. The device gently holds the patient’s mouth and delivers state-of-the-art isolation and humidity control which improves dental outcomes. "
         />
       </v-col>
@@ -86,7 +88,7 @@
       </v-col>
     </v-row>
 
-    <v-row justify="end" no-gutters class="">
+    <!-- <v-row justify="end" no-gutters class="">
 
       <v-img
         contain
@@ -102,7 +104,7 @@
         alt="invisalign provider"
       ></v-img>
       
-    </v-row>
+    </v-row> -->
   </v-container>
 </template>
 
