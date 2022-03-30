@@ -12,7 +12,7 @@
           School of Dental Medicine in 1995.
         </div>
       </v-col>
-      <v-row v-if="$vuetify.breakpoint.xs" justify="center">
+      <v-row v-if="$vuetify.breakpoint.xs" justify="center" class="mt-2">
         <v-img eager max-width="250px" src="/degrees.png" alt="degrees" />
       </v-row>
       <v-col cols="12" align="center" sm="6">
