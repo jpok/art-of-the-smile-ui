@@ -3,7 +3,7 @@
     <v-tab> Invisalign </v-tab>
     <v-tab-item>
       <v-sheet elevation="2" class="rounded-pill pa-4">
-        <v-row no-gutters align="center" justify="center">
+        <v-row align="center" justify="center">
           <v-col cols="12" sm="4" align="center" class="pa-2">
             <div
               class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
@@ -19,13 +19,6 @@
             />
           </v-col>
           <v-col cols="10" sm="4">
-            <!-- <nuxt-img
-            preload
-            class="concave-circle"
-            sizes="xl:25vw lg:25vw md:25vw sm:70vw xs:70vw"
-            src="/invisalign-woman.png"
-            alt="invisalign-woman"
-          /> -->
             <v-img
               class="concave-circle"
               eager
@@ -51,7 +44,7 @@
         </v-row>
       </v-sheet>
 
-      <v-row justify="space-around" class="">
+      <v-row justify="space-around" class="mt-4">
         <v-col cols="12" sm="4">
           <div class="text-subtitle-1 text-sm-h6 primary--text">
             What is it?
@@ -121,44 +114,46 @@
         <div v-if="!$vuetify.breakpoint.xs" cols="1" class="line primary"></div>
 
         <v-col cols="12" sm="6" class="order-first order-sm-last">
-          <v-row>
-            <v-col cols="6">
-              <v-row
-                justify="center"
-                class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
-              >
-                Before
-              </v-row>
-            </v-col>
-            <v-col cols="6">
-              <v-row
-                justify="center"
-                class="text-h6 text-sm-h5 text-lg-h4 4 primary--text font-italic font-weight-light"
-              >
-                After
-              </v-row>
-            </v-col>
-          </v-row>
-          <v-row>
-            <v-col cols="6">
-              <v-img
-                eager
-                max-height="160"
-                style="border-radius: 20px; border: 1px solid; opacity: 0.9"
-                class="accent"
-                src="implants-before.jpg"
-              />
-            </v-col>
-            <v-col cols="6">
-              <v-img
-                eager
-                max-height="160"
-                style="border-radius: 20px; border: 1px solid; opacity: 0.9"
-                class="primary"
-                src="implants-after.jpg"
-              />
-            </v-col>
-          </v-row>
+          <v-sheet elevation="2" class="rounded-pill pa-4">
+            <v-row justify="center">
+              <v-col cols="5">
+                <v-row
+                  justify="center"
+                  class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
+                >
+                  Before
+                </v-row>
+              </v-col>
+              <v-col cols="5">
+                <v-row
+                  justify="center"
+                  class="text-h6 text-sm-h5 text-lg-h4 4 primary--text font-italic font-weight-light"
+                >
+                  After
+                </v-row>
+              </v-col>
+            </v-row>
+            <v-row justify="center">
+              <v-col cols="5">
+                <v-img
+                  eager
+                  max-height="160"
+                  style="border-radius: 20px; border: 1px solid; opacity: 0.9"
+                  class="accent"
+                  src="implants-before.jpg"
+                />
+              </v-col>
+              <v-col cols="5">
+                <v-img
+                  eager
+                  max-height="160"
+                  style="border-radius: 20px; border: 1px solid; opacity: 0.9"
+                  class="primary"
+                  src="implants-after.jpg"
+                />
+              </v-col>
+            </v-row>
+          </v-sheet>
         </v-col>
       </v-row>
     </v-tab-item>
@@ -356,18 +351,19 @@
           </v-row>
         </v-col>
         <div v-if="!$vuetify.breakpoint.xs" cols="1" class="line primary"></div>
+        
         <v-col cols="12" sm="5" class="order-first order-sm-last">
           <v-row justify="center">
-            <v-card class="pa-6 mt-4 rounded">
+            <v-sheet elevation="2" class="pa-16 mt-4 rounded-pill">
               <v-img
                 contain
                 max-width="20rem"
-                style="border-radius: 20px; border: 4px solid"
+                style="border-radius: 20px; border: 2px solid"
                 class="secondary"
                 eager
                 src="bonding.png"
               />
-            </v-card>
+            </v-sheet>
           </v-row>
         </v-col>
       </v-row>
@@ -418,47 +414,64 @@
     <v-tab> Fillings </v-tab>
     <v-tab-item>
       <v-row justify="space-around" align="center" class="">
-        <v-col cols="12" sm="6">
-          <div class="text-h6 mb-2 primary--text font-weight-light">
+        <v-col cols="12" sm="5">
+          <div
+            class="text-h6 ma-4 primary--text text-sm-h5 text-lg-h5 font-weight-light"
+          >
             At Art of the Smile, we believe in using white composite fillings to
             stop harmful bacteria from spreading and damaging precious enamel.
           </div>
-          <div class="text-overline-1 secondary--text font-weight-light">
+          <div
+            class="text-body-1 md-text-h6 text-lg-h6 secondary--text ma-4 font-weight-light"
+          >
             Dr. Tekin only offers white composite fillings for the treatment of
             cavities or to replace some older, outdated metal fillings. Because
             white fillings are chemically bonded to a tooth, they are sometimes
             referred to as “bonding”.
           </div>
         </v-col>
-        <v-col cols="12" sm="5" class="order-first order-sm-last">
-          <v-row>
-            <v-col cols="6">
-              <v-row
-                justify="center"
-                class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
-              >
-                Before
-              </v-row>
-            </v-col>
-            <v-col cols="6">
-              <v-row
-                justify="center"
-                class="text-h6 text-sm-h5 text-lg-h4 4 primary--text font-italic font-weight-light"
-              >
-                After
-              </v-row>
-            </v-col>
-          </v-row>
-          <v-row>
-            <v-col cols="6">
-              <v-img eager class="mt-8" src="filling-before.png" />
-              <v-img eager class="mt-8" src="filling-before-2.png" />
-            </v-col>
-            <v-col cols="6">
-              <v-img eager class="mt-8" src="filling-after.png" />
-              <v-img eager class="mt-8" src="filling-after-2.png" />
-            </v-col>
-          </v-row>
+        <div v-if="!$vuetify.breakpoint.xs" cols="1" class="line primary"></div>
+        <v-col cols="12" sm="6" class="order-first order-sm-last">
+          <v-sheet elevation="2" class="rounded-pill pa-4">
+            <v-row justify="center">
+              <v-col cols="5">
+                <v-row
+                  justify="center"
+                  class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
+                >
+                  Before
+                </v-row>
+              </v-col>
+              <v-col cols="5">
+                <v-row
+                  justify="center"
+                  class="text-h6 text-sm-h5 text-lg-h4 4 primary--text font-italic font-weight-light"
+                >
+                  After
+                </v-row>
+              </v-col>
+            </v-row>
+            <v-row justify="center">
+              <v-col cols="5">
+                <v-img
+                  eager
+                  max-height="160"
+                  style="border-radius: 20px; border: 1px solid; opacity: 0.9"
+                  class="accent"
+                  src="filling-before.png"
+                />
+              </v-col>
+              <v-col cols="5">
+                <v-img
+                  eager
+                  max-height="160"
+                  style="border-radius: 20px; border: 1px solid; opacity: 0.9"
+                  class="primary"
+                  src="filling-after.png"
+                />
+              </v-col>
+            </v-row>
+          </v-sheet>
         </v-col>
       </v-row>
     </v-tab-item>
