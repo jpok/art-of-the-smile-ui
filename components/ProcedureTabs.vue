@@ -137,7 +137,7 @@
               <v-col cols="5">
                 <v-img
                   eager
-                  max-height="160"
+                  max-height="160"                  
                   style="border-radius: 20px; border: 1px solid; opacity: 0.9"
                   class="accent"
                   src="implants-before.jpg"
@@ -350,15 +350,15 @@
             </v-col>
           </v-row>
         </v-col>
-        <div v-if="!$vuetify.breakpoint.xs" cols="1" class="line primary"></div>
+        <div v-if="!$vuetify.breakpoint.smAndDown" cols="1" class="line primary"></div>
         
         <v-col cols="12" sm="5" class="order-first order-sm-last">
           <v-row justify="center">
-            <v-sheet elevation="2" class="pa-16 mt-4 rounded-pill">
+            <v-sheet elevation="2" class="pa-6 pa-sm-8 pa-md-12 mt-4 rounded-pill">
               <v-img
                 contain
-                max-width="20rem"
-                style="border-radius: 20px; border: 2px solid"
+                :max-width="$vuetify.breakpoint.xs ? '15rem' : '20rem'"
+                style="border-radius: 100px; border: 1px solid"
                 class="secondary"
                 eager
                 src="bonding.png"
