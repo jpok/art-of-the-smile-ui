@@ -18,7 +18,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Art of the Smile is an atlanta Georgia based private dental practice. Brock Tekin MD dentist office is located in fulton, county - buckhead - atlanta - Georgia.',
+          'Art of the Smile is an Atlanta, Georgia based private dental practice established by Brock Tekin MD',
       },
       { name: 'format-detection', content: 'telephone=no' },
     ],
