@@ -375,6 +375,7 @@
           :items="[
             { before: 'crown-before.jpg', after: 'crown-after.jpg' },
             { before: 'crown-before-1.jpg', after: 'crown-after-1.jpg' },
+            { before: 'crown-before-2.jpg', after: 'crown-after-2.jpg' },            
           ]"
         />
       </v-row>

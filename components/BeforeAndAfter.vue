@@ -14,13 +14,7 @@
               >
                 Before
               </div>
-              <!-- <nuxt-img
-              preload
-              class="accent mt-6"
-              sizes="sm:70vw md:30vw lg:300px"
-              style="border-radius: 20px; border: 1px solid; opacity: 0.9"              
-              :src="item.before"
-            /> -->
+
               <v-img
                 eager
                 contain
@@ -38,13 +32,7 @@
               >
                 After
               </div>
-              <!-- <nuxt-img
-              preload
-              class="primary mt-6"
-              sizes="sm:70vw md:30vw lg:300px"
-              style="border-radius: 20px; border: 1px solid; opacity: 0.9"              
-              :src="item.after"
-            /> -->
+
               <v-img
                 eager
                 contain
