@@ -77,7 +77,7 @@
             How does it work?
           </div>
 
-          <div class="text-body-1 mb-4secondary--text font-weight-light">
+          <div class="text-body-1 mb-4 secondary--text font-weight-light">
             You wear each set of aligners for a week, removing them only to eat,
             drink, brush, and floss. As you replace each aligner with the next
             in the series, your teeth will move — little by little, week by week
@@ -114,58 +114,35 @@
         <div v-if="!$vuetify.breakpoint.xs" cols="1" class="line primary"></div>
 
         <v-col cols="12" sm="6" class="order-first order-sm-last">
-          <v-sheet elevation="2" class="rounded-pill pa-4">
-            <v-row justify="center">
-              <v-col cols="5">
-                <v-row
-                  justify="center"
-                  class="text-h6 text-sm-h5 text-lg-h4 accent--text font-italic font-weight-light"
-                >
-                  Before
-                </v-row>
-              </v-col>
-              <v-col cols="5">
-                <v-row
-                  justify="center"
-                  class="text-h6 text-sm-h5 text-lg-h4 4 primary--text font-italic font-weight-light"
-                >
-                  After
-                </v-row>
-              </v-col>
-            </v-row>
-            <v-row justify="center">
-              <v-col cols="5">
-                <v-img
-                  eager
-                  max-height="160"                  
-                  style="border-radius: 20px; border: 1px solid; opacity: 0.9"
-                  class="accent"
-                  src="implants-before.jpg"
-                />
-              </v-col>
-              <v-col cols="5">
-                <v-img
-                  eager
-                  max-height="160"
-                  style="border-radius: 20px; border: 1px solid; opacity: 0.9"
-                  class="primary"
-                  src="implants-after.jpg"
-                />
-              </v-col>
-            </v-row>
-          </v-sheet>
+          <v-row justify="center">
+            <BeforeAndAfter
+              :items="[
+                {
+                  before: 'implants-before.jpg',
+                  after: 'implants-after.jpg',
+                },
+                {
+                  before: 'implants-before-1.jpg',
+                  after: 'implants-after-1.jpg',
+                },                
+              ]"
+            />
+          </v-row>
         </v-col>
       </v-row>
     </v-tab-item>
     <v-tab> Cleanings </v-tab>
     <v-tab-item>
-      <v-row justify="space-around" align="center" class="">
+      <v-sheet elevation="2" class="pa-sm-8" rounded="xl" style="margin-bottom: 1rem">
+        <v-img src="/cleaning.jpg" style="border-radius: 20px; opacity: .8; max-height: 500px;"></v-img>
+      </v-sheet>
+      <v-row justify="space-around" align="center">
         <v-col cols="12" sm="3" align-self="stretch">
           <v-col
             class="mr-auto text-subtitle-1 text-sm-h6 text-lg-h5 primary--text font-weight-light"
           >
             We believe in helping patients build a healthy foundation for teeth
-            and gums through a combination of great
+            and gums through a combination of
           </v-col>
           <v-col class="ml-auto">
             <ul
@@ -209,25 +186,7 @@
             fortify your teeth.
           </div>
 
-          <div
-            class="ma-2 text-subtitle-1 text-sm-h6 primary--text font-weight-light"
-          >
-            How does it work?
-          </div>
-
-          <div
-            class="ma-2 text-body-1 md-text-h6 text-lg-h6 secondary--text font-weight-light"
-          >
-            You wear each set of aligners for a week, removing them only to eat,
-            drink, brush, and floss. As you replace each aligner with the next
-            in the series, your teeth will move — little by little, week by week
-            — until they have straightened to the final position Dr. Tekin has
-            prescribed. You’ll visit Dr. Tekin about once every 8 weeks to
-            ensure that your treatment is progressing as planned. Total
-            treatment time averages 9-15 months and the average number of
-            aligners worn during treatment is between 18 and 30, but both will
-            vary from case to case.
-          </div>
+         
         </v-col>
       </v-row>
     </v-tab-item>
@@ -350,11 +309,18 @@
             </v-col>
           </v-row>
         </v-col>
-        <div v-if="!$vuetify.breakpoint.smAndDown" cols="1" class="line primary"></div>
-        
+        <div
+          v-if="!$vuetify.breakpoint.smAndDown"
+          cols="1"
+          class="line primary"
+        ></div>
+
         <v-col cols="12" sm="5" class="order-first order-sm-last">
           <v-row justify="center">
-            <v-sheet elevation="2" class="pa-6 pa-sm-8 pa-md-12 mt-4 rounded-pill">
+            <v-sheet
+              elevation="2"
+              class="pa-6 pa-sm-8 pa-md-12 mt-4 rounded-pill"
+            >
               <v-img
                 contain
                 :max-width="$vuetify.breakpoint.xs ? '15rem' : '20rem'"
@@ -370,12 +336,13 @@
     </v-tab-item>
     <v-tab> Crowns </v-tab>
     <v-tab-item>
-      <v-row>
+        <v-row>
         <BeforeAndAfter
           :items="[
             { before: 'crown-before.jpg', after: 'crown-after.jpg' },
             { before: 'crown-before-1.jpg', after: 'crown-after-1.jpg' },
             { before: 'crown-before-2.jpg', after: 'crown-after-2.jpg' },            
+            // { before: 'crown-before-3.jpg', after: 'crown-after-3.jpg' },            
           ]"
         />
       </v-row>
@@ -459,7 +426,7 @@
                   max-height="160"
                   style="border-radius: 20px; border: 1px solid; opacity: 0.9"
                   class="accent"
-                  src="filling-before.png"
+                  src="filling-before-1.png"
                 />
               </v-col>
               <v-col cols="5">
@@ -468,7 +435,7 @@
                   max-height="160"
                   style="border-radius: 20px; border: 1px solid; opacity: 0.9"
                   class="primary"
-                  src="filling-after.png"
+                  src="filling-after-1.png"
                 />
               </v-col>
             </v-row>
