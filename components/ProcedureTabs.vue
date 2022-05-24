@@ -262,6 +262,7 @@
             { before: 'veneer-before-6.jpg', after: 'veneer-after-6.jpg' },
             { before: 'veneer-before-7.jpg', after: 'veneer-after-7.jpg' },
             { before: 'veneer-before-10.jpg', after: 'veneer-after-10.jpg' },
+            { before: 'veneer-before-11.jpg', after: 'veneer-after-11.jpg' },
           ]"
         />
       </v-row>
@@ -342,7 +343,7 @@
             { before: 'crown-before.jpg', after: 'crown-after.jpg' },
             { before: 'crown-before-1.jpg', after: 'crown-after-1.jpg' },
             { before: 'crown-before-2.jpg', after: 'crown-after-2.jpg' },            
-            // { before: 'crown-before-3.jpg', after: 'crown-after-3.jpg' },            
+            { before: 'crown-before-3.jpg', after: 'crown-after-3.jpg' },            
           ]"
         />
       </v-row>
