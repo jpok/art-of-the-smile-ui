@@ -46,7 +46,7 @@
         <!-- <nuxt-img      
           quality="100"
           sizes="xl:800px lg:800px md:800px sm:70vw xs:70vw"
-          src="/invisalign-woman.png"          
+          src="/invisalign-woman-2.png"          
           alt="invisalign-woman"          
         /> -->
 
