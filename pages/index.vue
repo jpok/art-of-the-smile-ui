@@ -44,7 +44,7 @@
       </v-col>
       <v-col cols="12" sm="6" align="center" class="order-first order-sm-last">        
 
-        <v-img eager src="/invisalign-woman-2.png" alt="invisalign-woman" />
+        <v-img eager src="/invisalign-woman.png" alt="invisalign-woman" />
 
         <v-row justify="center" align="center">
           <v-col>
